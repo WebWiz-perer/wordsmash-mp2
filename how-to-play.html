@@ -63,66 +63,41 @@
 
                     <!-- Main menu -->
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" aria-label="Main Menu">
-                        <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="index.html" aria-label="Go back to homepage">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="how-to-play.html" aria-label="Rules of the game">Rules</a>
-                              </li>  
-                              <li class="nav-item">
-                                  <a class="nav-link" href="startgame.html" aria-label="Start the WordSmash game">Play</a>
-                              </li>   
-                          </ul>
+                          <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html" aria-label="Go back to homepage">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="how-to-play.html" aria-label="Rules of the game">Rules</a>
+                                </li>  
+                                <li class="nav-item">
+                                    <a class="nav-link" href="startgame.html" aria-label="Start the WordSmash game">Play</a>
+                                </li>   
+                            </ul>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
-
-        <main>
-            <!-- Section displaying a random word -->
-        <div class="random-word-container text-center ">
-              <!-- Heading for the section -->
-               <h1 class="random-word">Word Of the Day</h1>
-
-            <!-- Random word dynamically populated -->
-              <div class="random-word" id="random-word">Loading</div>
-
-            <!-- Definition dynamically populated -->  
-              <div class="definition"  id="random-word-definition">please wait</div>
-           <!-- Container for vertically centering buttons -->
-           <div class="d-flex flex-column justify-content-center align-items-center">
-            <a href="rules.html" class="btn btn-rules btn-sep" role="button"
-                aria-label="Rules">How to Play</a>
-            <a href="startgame.html" class="btn btn-startgame btn-sep" role="button"
-                aria-label="Go to Learn Page">Start Game</a>
-           
-         </div>
-
-
-
-
-
-
-
-
-        </main>
-
-
-
-    
-
- <!--Script for icons "Font Awesome"-->
- <script src="https://kit.fontawesome.com/d63b433288.js" crossorigin="anonymous"></script>
-
- <!-- Link to Bootstrap JavaScript bundle from CDN -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-<!-- Link to words.js -->
-<script src="assets/js/randomword.js"></script>
-</body>
-
-
-
-</html>
+        <div class="open-book">
+            <div class="book-page left-page">
+              <h2>How to Play WordSmash</h2>
+              <h3>Objective:</h3>
+              <p>Guess the hidden word by filling in the blanks before losing all your books. Improve your vocabulary by learning the word’s definition at the end!</p>
+              <h3>Game Rules</h3>
+              <li>A random word is selected, and its definition or hint is displayed to help you guess the word.</li>
+              <li> The word appears as a series of blanks (e.g., _ _ _ _ _ for a 5-letter word)</li>
+              <li>Players must guess letters to reveal the hidden word.</li>
+              <li>For each word you get five books, each wrong letter guess looses 1 book</li>
+            </div>
+            <div class="book-page right-page">
+              <h3>Win or Learn</h3>
+              <li>If you guess the word correctly before losing all your books, you win and earn points.</li>
+              <li>Even if you couldnt guess the word, you’ll see the word’s definition at the end, so you learn while playing!</li>
+                <h3>Challenge Yourself</h3>
+                <li>A timer counts down for each round to challenge yourself.</li>
+                <li>Guess the word within the time limit to earn bonus points!</li>
+                <h3> Scoring</h3>
+                <li>10 points for correctly guessing the word.5 bonus points if you solve it without losing a book.</li>
+                <p><strong>Have Fun and Learn!</strong></p>
+            </div>
+          </div>
