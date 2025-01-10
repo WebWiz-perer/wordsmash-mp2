@@ -67,10 +67,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="How-to-play.html" aria-label="Start the WordSmash game">Play</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html" aria-label="Learn new words and improve vocabulary">Learn</a>
-                                </li>
+                                </li>    
                             </ul>
                         </div>
                     </div>
@@ -78,14 +75,48 @@
             </nav>
         </header>
 
+        <main>
+            <!-- Section displaying a random word -->
+        <div class="random-word-container text-center ">
+              <!-- Heading for the section -->
+               <h1 class="random-word">Word Of the Day</h1>
+
+            <!-- Random word dynamically populated -->
+              <div class="random-word" id="random-word">Loading</div>
+
+            <!-- Definition dynamically populated -->  
+              <div class="definition"  id="random-word-definition">please wait</div>
+           <!-- Container for vertically centering buttons -->
+           <div class="d-flex flex-column justify-content-center align-items-center">
+            <a href="rules.html" class="btn btn-rules btn-sep" role="button"
+                aria-label="Rules">How to Play</a>
+            <a href="startgame.html" class="btn btn-startgame btn-sep" role="button"
+                aria-label="Go to Learn Page">Start Game</a>
+           
+
+
+
+
+
+
+
+
+
+        </main>
+
 
 
     
 
+ <!--Script for icons "Font Awesome"-->
+ <script src="https://kit.fontawesome.com/d63b433288.js" crossorigin="anonymous"></script>
+
+ <!-- Link to Bootstrap JavaScript bundle from CDN -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-
-
+<!-- Link to words.js -->
+<script src="assets/js/randomword.js"></script>
 </body>
 
 
