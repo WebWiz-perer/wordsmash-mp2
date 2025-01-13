@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata for character set, description, and viewport -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Guess the Word Game">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+         <!-- Open Graph Metadata for Social Media -->
+        <meta property="og:title" content="Flag me - Interactive World Flags Quiz">
+        <meta property="og:description" content= "Play WordSmash, the ultimate word puzzle game! Smash letters, guess words, and learn new vocabulary.">
+        
+        <!-- Linking Bootstrap CSS for styling -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        
+        <!-- Linking custom styles -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+        <!-- Linking Font Awesome icons -->
+        <script src="https://kit.fontawesome.com/45b8f34d90.js" crossorigin="anonymous"></script>
+       
+        <!-- Favicon for the website -->
+        <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+        
+        <!-- Include jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Page Title -->
+
+        <title>WordSmash</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light fixed-top" aria-label ="Main navigation">
+                <div class="container-fluid">
+                   
+                    <!-- Game Title and Branding -->
+                    <a id="logo-font" class="navbar-brand" href="index.html" aria-label="Go to WordSmash Homepage">
+                      <h1>WordSmash</h1>
+                    </a>
+    
+                    <!-- Game Slogan -->
+                    <h1 id="slogan-font" class="navbar-text mx-3 d-none d-md-block" aria-label="go to wordsmash">
+                        Smash the Words, Sharpen Your Mind!
+                    </h1>
+                  
+                     <!-- Navigation toggler button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                tabindex="0">
+
+                <!-- Added tabindex attribute for keyboard accessibility -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas navigation -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header">
+                    <p class="offcanvas-title" id="offcanvasNavbarLabel">Word Smash</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close Menu"></button>
+                </div>
+                <div class="offcanvas-body">
+
+                    <!-- Main menu -->
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" aria-label="Main Menu">
+                          <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html" aria-label="Go back to homepage">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="how-to-play.html" aria-label="Rules of the game">Rules</a>
+                                </li>  
+                                <li class="nav-item">
+                                    <a class="nav-link" href="startgame.html" aria-label="Start the WordSmash game">Play</a>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+       <body>
+        <div class="main-container" id=" game-container">
+           
+
+             <!-- Title -->
+        <div class="title-container">
+            <h1>Smash the Word!</h1>
+            <h3 class="text-center">Best of Luck!</h3>
+        </div>
+          <!-- Displaying remianing chances-->
+            <div class="d-flex justify-content-between">
+                <div id="score">Score: 0</div>
+                <div id="lives">
+                    <i class="fas fa-book"></i>
+                    <i class="fas fa-book"></i>
+                    <i class="fas fa-book"></i>
+                    <i class="fas fa-book"></i>
+                    <i class="fas fa-book"></i>
+                </div>
+            </div>
+
+            <!--hint -->
+            <div class="hint-container">
+              <span id="word">Hint:</span>
+            </div>
+            <!-- Word Blanks -->
+        <div class="word-container mt-3">
+            <p id="word-blanks" class="text-center">_ _ _ _ _</p>
+          </div>
+  
+          <!-- On-screen Keyboard -->
+          <div class="keyboard-container mt-4">
+            <div id="keyboard"></div>
+          </div>
+  
+          <!-- Game Controls -->
+          <div class="d-flex justify-content-between mt-4">
+            <button id="end-game" class="btn btn-endgame btn-sep">End Game</button>
+            <button id="how-to-play" class="btn btn-rules btn-sep">How to Play</button>
+          </div>
+        </div>
+      </main>
+  
+      <script src="assets/js/game.js"></script>
+    </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!--Script for icons "Font Awesome"-->
+ <script src="https://kit.fontawesome.com/d63b433288.js" crossorigin="anonymous"></script>
+
+ <!-- Link to Bootstrap JavaScript bundle from CDN -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Link to words.js -->
+<script src="assets/js/randomword.js"></script>
+</body>
+
+
+
+</html>
