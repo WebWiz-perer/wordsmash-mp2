@@ -12,3 +12,15 @@ const words = [
     { word: 'Acuity', hint: 'Sharpness of thought.', definition: 'Keenness or sharpness in understanding or vision.' }
   ];
   
+  let currentWordIndex = 0;
+  let score= 0;
+  let lives= 5; 
+  let timer; 
+
+// Start the Game
+function startGame() {
+    currentWordIndex = 0;
+    score = 0;
+    displayWord();
+    updateScoreAndLives();
+}
