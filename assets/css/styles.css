@@ -249,15 +249,6 @@ main {
 }
 
 
-/* Styles for the font size control icons */
-.font-icon {
-    font-size: 30px;
-    color: #333;
-    margin: 0 10px;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-}
 
 /* Styles for end-game and back to home buttons*/
 
@@ -277,4 +268,64 @@ main {
 .btn-endgame:hover,
 .btn-backtohome:hover {
   background-color: #99636E; 
+}
+
+/* Hint section */
+#hint {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Word blanks */
+#word-blanks {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.blank {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 5px;
+    border-bottom: 2px solid #333;
+    width: 30px;
+    text-align: center;
+    color: #333;
+}
+
+/* Keyboard buttons */
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.keyboard-container button {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #48677C;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.keyboard-container  button:hover {
+    background-color: #87A09D;
+}
+
+keyboardbutton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Score and lives */
+#score,
+#lives {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
 }

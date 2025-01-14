@@ -15,7 +15,14 @@ const words = [
   let currentWordIndex = 0;
   let score= 0;
   let lives= 5; 
-  let timer; 
+  let timer;
+
+
+const wordBlanks = document.getElementById('word-blanks');
+const hintElement = document.getElementById('hint');
+const keyboard = document.getElementById('keyboard');
+const scoreElement = document.getElementById('score');
+const livesElement = document.getElementById('lives');
 
 // Start the Game
 function startGame() {
@@ -23,22 +30,50 @@ function startGame() {
     score = 0;
     displayWord();
     updateScoreAndLives();
+    createKeyboard();
 }
 
 function displayWord() {
-    const wordObj = [ currentWordIndex]
+    const wordObj =words[currentWordIndex]
     const word = wordObj.word.toUpperCase()
-    const hint = wordObj.hint;
+    hintElement.textContent = 'Hint: ${wordObj.hint}'
+    //Blanks displayed based on word length
+    const wordContainer=document.getElementById('word-blanks');
+    wordBlanks.innerHTML = '';
+    for (let i = 0; i < word.length; i++) {
+        const span = document.createElement('span');
+        blanks.textContent = '_';
+        blank.setAttribute('data-letter', word[i]);
+        wordContainer.appendChild(blank);
+    }
+
+     // Show hint
+  document.getElementById('hint-text').textContent = `Hint: ${hint}`;
+
+  // Reset lives
+  lives = 5;
+  updateScoreAndLives();
+
+  // Start the timer
+  startTimer();
 }
 
+// Start a 60-second timer
+function startTimer() {
+  clearInterval(timer); // Clear any existing timer
+  let timeLeft = 60;
+  const timerElement = document.getElementById('timer');
+  timerElement.textContent = `Time Left: ${timeLeft}s`;
 
-  // Display blanks based on word length
-  const wordContainer = document.getElementById('word-blanks');
-  wordContainer.innerHTML = '';
-  for (let i = 0; i < word.length; i++) {
-    const blank = document.createElement('span');
-    blank.className = 'blank';
-    blank.textContent = '_';
-    blank.setAttribute('data-letter', word[i]);
-    wordContainer.appendChild(blank);
-  }
+  timer = setInterval(() => {
+    timeLeft--;
+    timerElement.textContent = `Time Left: ${timeLeft}s`;
+
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      handleIncorrectWord();
+    }
+  }, 1000);
+}
+
+   
