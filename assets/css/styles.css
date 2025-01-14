@@ -258,3 +258,23 @@ main {
     background-color: transparent;
     border: none;
 }
+
+/* Styles for end-game and back to home buttons*/
+
+.btn-endgame,
+.btn-backtohome{
+ margin: 10px;
+ background-color: #6E3953;
+ color: #ffffff;
+ padding: 10px;
+ font-size: 1em;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.btn-endgame:hover,
+.btn-backtohome:hover {
+  background-color: #99636E; 
+}
