@@ -24,3 +24,21 @@ function startGame() {
     displayWord();
     updateScoreAndLives();
 }
+
+function displayWord() {
+    const wordObj = [ currentWordIndex]
+    const word = wordObj.word.toUpperCase()
+    const hint = wordObj.hint;
+}
+
+
+  // Display blanks based on word length
+  const wordContainer = document.getElementById('word-blanks');
+  wordContainer.innerHTML = '';
+  for (let i = 0; i < word.length; i++) {
+    const blank = document.createElement('span');
+    blank.className = 'blank';
+    blank.textContent = '_';
+    blank.setAttribute('data-letter', word[i]);
+    wordContainer.appendChild(blank);
+  }
