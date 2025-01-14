@@ -36,19 +36,20 @@ function startGame() {
 function displayWord() {
     const wordObj =words[currentWordIndex]
     const word = wordObj.word.toUpperCase()
-    hintElement.textContent = 'Hint: ${wordObj.hint}'
+    hintElement.textContent = `Hint: ${wordObj.hint}`;
+    
     //Blanks displayed based on word length
-    const wordContainer=document.getElementById('word-blanks');
+    
     wordBlanks.innerHTML = '';
     for (let i = 0; i < word.length; i++) {
         const span = document.createElement('span');
-        blanks.textContent = '_';
-        blank.setAttribute('data-letter', word[i]);
-        wordContainer.appendChild(blank);
+        span.textContent = '_';
+        span.setAttribute('data-letter', word[i]);
+        wordBlanks.appendChild(span);
     }
 
      // Show hint
-  document.getElementById('hint-text').textContent = `Hint: ${hint}`;
+  document.getElementById('hint').textContent = `Hint: ${wordObj.hint}`;
 
   // Reset lives
   lives = 5;
@@ -76,4 +77,75 @@ function startTimer() {
   }, 1000);
 }
 
-   
+// Create the on-screen keyboard
+function createKeyboard() {
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    keyboard.innerHTML = ''; // Clear any existing buttons
+
+    alphabet.split('').forEach(letter => {
+        const button = document.createElement('button');
+        button.textContent = letter;
+        button.classList.add('keyboard-btn');
+        button.addEventListener('click', () => handleLetterClick(letter));
+        keyboard.appendChild(button);
+    });
+}
+
+// Handle the user's letter click
+function handleLetterClick(letter) {
+    const wordObj = words[currentWordIndex];
+    const word = wordObj.word.toUpperCase();
+    let correctGuess = false;
+
+    // Check if the letter is in the word
+    const spans = wordBlanks.querySelectorAll('span');
+    spans.forEach((span, index) => {
+        if (span.getAttribute('data-letter') === letter) {
+            span.textContent = letter; // Reveal the letter
+            correctGuess = true;
+        }
+    });
+
+    // If the guess was incorrect, decrement lives
+    if (!correctGuess) {
+        lives--;
+        updateScoreAndLives();
+        if (lives === 0) {
+            alert('Game Over!');
+            resetGame();
+        }
+    }
+
+    // Check if the word is fully guessed
+    if (![...wordBlanks.querySelectorAll('span')].some(span => span.textContent === '_')) {
+        score++;
+        currentWordIndex++;
+        if (currentWordIndex >= words.length) {
+            alert('You won the game!');
+            resetGame();
+        } else {
+            displayWord();
+        }
+    }
+}
+
+// Update score and lives
+function updateScoreAndLives() {
+    scoreElement.textContent = `Score: ${score}`;
+    livesElement.innerHTML = '';
+    for (let i = 0; i < lives; i++) {
+        const bookIcon = document.createElement('i');
+        bookIcon.className = 'fas fa-book';
+        livesElement.appendChild(bookIcon);
+    }
+}
+
+// Reset the game
+function resetGame() {
+    score = 0;
+    lives = 5;
+    currentWordIndex = 0;
+    updateScoreAndLives();
+}
+    // Initialize the game when the page loads
+window.addEventListener('DOMContentLoaded', startGame);
