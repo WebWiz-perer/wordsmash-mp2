@@ -252,7 +252,7 @@ main {
 
 /* Styles for end-game and back to home buttons*/
 
-.btn-endgame,
+.btn-nextword,
 .btn-backtohome{
  margin: 10px;
  background-color: #6E3953;
@@ -265,7 +265,7 @@ main {
  transition: background-color 0.3s ease;
 }
 
-.btn-endgame:hover,
+.btn-nextword:hover,
 .btn-backtohome:hover {
   background-color: #99636E; 
 }

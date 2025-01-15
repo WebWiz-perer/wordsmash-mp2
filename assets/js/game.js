@@ -140,6 +140,18 @@ function updateScoreAndLives() {
     }
 }
 
+// Handle the "Next Word" button click
+document.getElementById('next-word-btn').addEventListener('click', () => {
+    if (currentWordIndex < words.length - 1) {
+      currentWordIndex++; // Move to the next word
+      displayWord(); // Display the next word
+      document.getElementById('definition-section').classList.add('hidden'); // Hide the definition
+    } else {
+      alert('You have completed all words! Restarting the game...');
+      startGame(); // Restart the game if all words are completed
+    }
+  });
+
 // Reset the game
 function resetGame() {
     score = 0;
