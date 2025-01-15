@@ -270,6 +270,25 @@ main {
   background-color: #99636E; 
 }
 
+/* Custom styles for the 'Next Word' button */
+.swal2-confirm.btn-next {
+    background-color: #6E3953;
+    color: white;
+    border: none;
+}
+
+/* Custom styles for the 'Try Again' button */
+.swal2-confirm.btn-try-again {
+    background-color: #99636E; 
+    color: white;
+    border: none;
+}
+
+.swal2-confirm {
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
 /* Hint section */
 #hint {
     font-size: 1.2rem;
