@@ -32,32 +32,7 @@ function startGame() {
     updateScoreAndLives();
     createKeyboard();
 }
-
-function displayWord() {
-    const wordObj =words[currentWordIndex]
-    const word = wordObj.word.toUpperCase()
-    hintElement.textContent = `Hint: ${wordObj.hint}`;
     
-    //Blanks displayed based on word length
-    
-    wordBlanks.innerHTML = '';
-    for (let i = 0; i < word.length; i++) {
-        const span = document.createElement('span');
-        span.textContent = '_';
-        span.setAttribute('data-letter', word[i]);
-        wordBlanks.appendChild(span);
-    }
-
-     // Show hint
-  document.getElementById('hint').textContent = `Hint: ${wordObj.hint}`;
-
-  // Reset lives
-  lives = 5;
-  updateScoreAndLives();
-
-  // Start the timer
-  startTimer();
-}
 
 // Start a 60-second timer
 function startTimer() {
@@ -98,6 +73,7 @@ function handleLetterClick(letter) {
     let correctGuess = false;
 
     // Check if the letter is in the word
+
     const spans = wordBlanks.querySelectorAll('span');
     spans.forEach((span, index) => {
         if (span.getAttribute('data-letter') === letter) {
@@ -111,21 +87,16 @@ function handleLetterClick(letter) {
         lives--;
         updateScoreAndLives();
         if (lives === 0) {
-            alert('Game Over!');
+            showDefinition(false); // Show definition if the player runs out of lives
             resetGame();
         }
     }
 
     // Check if the word is fully guessed
-    if (![...wordBlanks.querySelectorAll('span')].some(span => span.textContent === '_')) {
+     if (![...wordBlanks.querySelectorAll('span')].some(span => span.textContent === '_')) {
         score++;
-        currentWordIndex++;
-        if (currentWordIndex >= words.length) {
-            alert('You won the game!');
-            resetGame();
-        } else {
-            displayWord();
-        }
+        updateScoreAndLives();
+        showDefinition(true); // Show definition if the player guesses correctly
     }
 }
 
@@ -140,24 +111,48 @@ function updateScoreAndLives() {
     }
 }
 
-// Handle the "Next Word" button click
-document.getElementById('next-word-btn').addEventListener('click', () => {
-    if (currentWordIndex < words.length - 1) {
-      currentWordIndex++; // Move to the next word
-      displayWord(); // Display the next word
-      document.getElementById('definition-section').classList.add('hidden'); // Hide the definition
-    } else {
-      alert('You have completed all words! Restarting the game...');
-      startGame(); // Restart the game if all words are completed
+//  displayWord function to clear the previous game state
+function displayWord() {
+    const wordObj = words[currentWordIndex];
+    const word = wordObj.word.toUpperCase();
+    
+    hintElement.textContent = `Hint: ${wordObj.hint}`; // Show the hint
+    wordBlanks.innerHTML = '';
+
+    for (let i = 0; i < word.length; i++) {
+      const span = document.createElement('span');
+      span.textContent = '_';
+      span.setAttribute('data-letter', word[i]);
+      wordBlanks.appendChild(span); // Correctly appending the span
     }
-  });
+  
+    // Reset lives and timer
+    lives = 5;
+    updateScoreAndLives();
+    startTimer();
+    createKeyboard();
+  }
+  
+  // Function to show the definition after the round
+  function showDefinition(isWin) {
+    const wordObj = words[currentWordIndex];
+    const resultText = isWin 
+    ? '🎉 Congratulations! You guessed the word!' 
+    : '🤓Oh, Not to Fret ! You learned something new today.';
+    document.getElementById('game-result').textContent = resultText;
+    document.getElementById('word-definition').textContent = `The word was "${wordObj.word}": ${wordObj.definition}`;
+    document.getElementById('definition-section').classList.remove('hidden');
+  }
+
 
 // Reset the game
 function resetGame() {
     score = 0;
     lives = 5;
     currentWordIndex = 0;
+    clearInterval(timer);
     updateScoreAndLives();
 }
+
     // Initialize the game when the page loads
 window.addEventListener('DOMContentLoaded', startGame);
