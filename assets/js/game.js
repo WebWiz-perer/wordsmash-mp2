@@ -1,3 +1,5 @@
+/*jshint esversion: 6*/
+
 let currentWordIndex = 0;
 let score = 0;
 let lives = 5;
@@ -8,9 +10,9 @@ const hintElement = document.getElementById('hint');
 const keyboard = document.getElementById('keyboard');
 const scoreElement = document.getElementById('score');
 const livesElement = document.getElementById('lives');
-const nextWordBtn = document.getElementById('nextword-btn'); // Fixed variable name for the button
+const nextWordBtn = document.getElementById('nextword-btn'); 
 const words = [
-  { word: 'Ebullient', hint: 'Cheerful and full of energy.', definition: 'Showing excitement and enthusiasm.' },
+  { word: 'Ebullient' , hint: 'Cheerful and full of energy.', definition: 'Showing excitement and enthusiasm.' },
   { word: 'Ineffable', hint: 'Too great to be expressed in words.', definition: 'Beyond description or expression.' },
   { word: 'Quixotic', hint: 'Exceedingly idealistic.', definition: 'Impractical and overly romantic.' },
   { word: 'Peregrinate', hint: 'To travel around.', definition: 'To wander from place to place.' },
@@ -22,7 +24,8 @@ const words = [
   { word: 'Acuity', hint: 'Sharpness of thought.', definition: 'Keenness or sharpness in understanding or vision.' }
 ];
 
-// Start the Game
+// Start the Game by resetting all the scores,index and lives.
+
 function startGame() {
   currentWordIndex = 0;
   score = 0;
@@ -31,7 +34,15 @@ function startGame() {
   createKeyboard();
 }
 
-// Start a 60-second timer
+function handleIncorrectWord() {
+  lives = 0; // Set lives to zero
+  updateScoreAndLives();
+  showDefinition(false); // Display the definition as the user failed
+  resetGame();
+}
+/**
+ * Starts a 60-second timer and updates the countdown, also resets if already exists.
+ */
 function startTimer() {
   clearInterval(timer); // Clear any existing timer
   let timeLeft = 60;
@@ -48,8 +59,10 @@ function startTimer() {
     }
   }, 1000);
 }
-
-// Create the on-screen keyboard
+/**
+ * Create the on-screen keyboard
+ * @param {string[]} alphabet - The set of letters to create buttons for.
+ */
 function createKeyboard() {
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   keyboard.innerHTML = ''; // Clear any existing buttons
@@ -63,13 +76,14 @@ function createKeyboard() {
   });
 }
 
-// Handle the user's letter click
+/**
+ * Handles the event when a letter is clicked.
+ * Reveals the correct letters in the word or decreases lives if incorrect.
+ * @param {string} letter - The letter clicked by the user.
+ */
 function handleLetterClick(letter) {
-  const wordObj = words[currentWordIndex];
-  const word = wordObj.word.toUpperCase();
-  let correctGuess = false;
-
-  // Check if the letter is in the word
+ let correctGuess = false;
+ // Check if the letter is in the word
   const spans = wordBlanks.querySelectorAll('span');
   spans.forEach((span, index) => {
     if (span.getAttribute('data-letter') === letter) {
@@ -96,7 +110,9 @@ function handleLetterClick(letter) {
   }
 }
 
-// Update score and lives
+/**
+ * Updates the score and lives display on the screen.
+ */
 function updateScoreAndLives() {
   scoreElement.textContent = `Score: ${score}`;
   livesElement.innerHTML = '';
@@ -107,7 +123,10 @@ function updateScoreAndLives() {
   }
 }
 
-// Display word and its blank spaces
+/**
+ * Displays the current word as underscores and shows its hint.
+ * Resets the lives, timer, and keyboard for the round.
+ */
 function displayWord() {
   const wordObj = words[currentWordIndex];
   const word = wordObj.word.toUpperCase();
@@ -119,7 +138,7 @@ function displayWord() {
     const span = document.createElement('span');
     span.textContent = '_';
     span.setAttribute('data-letter', word[i]);
-    wordBlanks.appendChild(span); // Correctly appending the span
+    wordBlanks.appendChild(span); 
   }
 
   // Reset lives and timer
@@ -131,12 +150,15 @@ function displayWord() {
   document.getElementById('definition-section').classList.add('hidden'); // Hide definition section
 }
 
-// Function to show the definition after the round
+/**
+ * Shows the definition of the word and displays the result of the round.
+ * @param {boolean} isWin - Indicates whether the player guessed the word correctly.
+ */
 function showDefinition(isWin) {
     const wordObj = words[currentWordIndex];
-    const resultText = isWin
-        ? '🎉 Congratulations! You guessed the word!'
-        : '🤓 Oh, not to fret! You learned something new today.';
+    const resultText = isWin?
+     '🎉 Congratulations! You guessed the word!': 
+     '🤓 Oh, not to fret! You learned something new today.';
     const icon = isWin ? 'success' : 'info';
 
     // Use SweetAlert2 to display the result
@@ -148,7 +170,7 @@ function showDefinition(isWin) {
         allowOutsideClick: false,
         backdrop: true,
         customClass: {
-            confirmButton: isWin ? 'btn-next' : 'btn-try-again', // Custom button class
+            confirmButton: isWin ? 'btn-next' : 'btn-try-again', 
         },
     }).then(() => {
         // Proceed to the next word or end the game
@@ -169,12 +191,29 @@ function showDefinition(isWin) {
 // Next Word Button Handler
 nextWordBtn.addEventListener('click', () => {
   if (currentWordIndex < words.length - 1) {
-    currentWordIndex++; // Move to the next word
-    displayWord(); // Display the next word
-    document.getElementById('definition-section').classList.add('hidden'); // Hide the definition section
+      currentWordIndex++;
+      displayWord();
   } else {
-    alert('All words completed! Great job!');
-    resetGame(); // Restart the game
+      Swal.fire({
+          title: '🎉 All Words Completed!',
+          text: 'Great job! You have completed all the words.',
+          icon: 'success',
+          confirmButtonText: 'Restart',
+          showCancelButton: true,
+          cancelButtonText: 'Exit',
+          customClass: {
+              confirmButton: 'confirm-btn',
+              cancelButton: 'cancel-btn',
+          },
+          buttonsStyling: false, 
+      }).then((result) => {
+          if (result.isConfirmed) {
+              resetGame(); 
+          } else {
+              
+              console.log('Game exited.');
+          }
+      });
   }
 });
 
@@ -187,6 +226,7 @@ function resetGame() {
   updateScoreAndLives();
   startGame();
 }
+
 
 // Initialize the game when the page loads
 window.addEventListener('DOMContentLoaded', startGame);

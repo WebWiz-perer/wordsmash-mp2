@@ -214,7 +214,7 @@ main {
 
 .main-container{
     text-align: center;
-    margin: auto;
+    margin:auto;
     padding: 2rem;
     background-color: #D1CBB8;
     border-radius: 15px;
@@ -289,6 +289,40 @@ main {
     padding: 12px 24px;
     border-radius: 5px;
 }
+
+.confirm-btn{
+    background-color: #6E3953;
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+confirm-btn:hover {
+    background-color: #99636E; 
+}
+
+.cancel-btn{
+    background-color: #6E3953;
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+cancel-btn:hover {
+    background-color: #99636E; 
+}
+
+
 /* Hint section */
 #hint {
     font-size: 1.2rem;
@@ -347,4 +381,19 @@ keyboardbutton:disabled {
     font-size: 1.2rem;
     margin: 10px 0;
     color: #333;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 1.5rem; 
+        width: 95%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 1rem; 
+        width: 100%; 
+    }
 }

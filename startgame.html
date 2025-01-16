@@ -28,39 +28,38 @@
 
         <title>WordSmash</title>
     </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-light fixed-top" aria-label ="Main navigation">
-                <div class="container-fluid">
-                   
-                    <!-- Game Title and Branding -->
-                    <a id="logo-font" class="navbar-brand" href="index.html" aria-label="Go to WordSmash Homepage">
-                      <h1>WordSmash</h1>
-                    </a>
+<body>
     
-                    <!-- Game Slogan -->
-                    <h1 id="slogan-font" class="navbar-text mx-3 d-none d-md-block" aria-label="go to wordsmash">
-                        Smash the Words, Sharpen Your Mind!
-                    </h1>
-                  
-                     <!-- Navigation toggler button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
-                tabindex="0">
+<header>
+    <nav class="navbar bg-light fixed-top" aria-label="Main Navigation">
+        <div class="container-fluid">
+            <!-- Left-aligned section: logo and slogan -->
+            <div class="d-flex align-items-center">
+                <!-- Game Title and Branding -->
+                <a id="logo-font" class="navbar-brand" href="index.html" aria-label="Go to WordSmash Homepage">
+                    <h1>WordSmash</h1>
+                </a>
 
-                <!-- Added tabindex attribute for keyboard accessibility -->
+                <!-- Game Slogan -->
+                <h1 id="slogan-font" class="navbar-text mx-3 d-none d-md-block" aria-label="go to wordsmash">
+                    Smash the Words, Sharpen Your Mind!
+                </h1>
+            </div>
+
+            <!-- Right-aligned section: toggler button -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                    tabindex="0">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Offcanvas navigation -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <p class="offcanvas-title" id="offcanvasNavbarLabel">Word Smash</p>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close Menu"></button>
+                    <p class="offcanvas-title" id="offcanvasNavbarLabel">WordSmash</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-
                     <!-- Main menu -->
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" aria-label="Main Menu">
                           <li class="nav-item">
@@ -78,13 +77,11 @@
                 </div>
             </nav>
         </header>
-       <body>
+       <main>
         <div class="main-container" id="game-container">
-           
-
-             <!-- Title -->
+            <!-- Title -->
         <div class="title-container">
-            <h1>Smash the Word!</h1>
+            <h2>Smash the Word!</h2>
             <h3 class="text-center">Best of Luck!</h3>
         </div>
           <!-- Displaying remianing chances-->
@@ -107,7 +104,7 @@
             </div>
             <!-- Word Blanks -->
         <div class="word-container mt-3">
-            <div id="word-blanks" class="text-center">_ _ _ _ _</p>
+            <div id="word-blanks" class="text-center">_ _ _ _ _
           </div>
     
           <!-- On-screen Keyboard -->
@@ -126,81 +123,11 @@
             <a href="index.html" class="btn-backtohome col-med-3">Back to Home</a>
           </div>
         </div>
+        </div>
       </main>
   
-      <script src="assets/js/game.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    </body>
-  </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         <!--Script for icons "Font Awesome"-->
+<!--Script for icons "Font Awesome"-->
  <script src="https://kit.fontawesome.com/d63b433288.js" crossorigin="anonymous"></script>
 
  <!-- Link to Bootstrap JavaScript bundle from CDN -->
@@ -209,6 +136,8 @@
 
 <!-- Link to words.js -->
 <script src="assets/js/game.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 

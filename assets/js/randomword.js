@@ -1,3 +1,4 @@
+/*jshint esversion: 6*/
 // List of words of the day with definitions
 const randomwords = [
     { word: 'Ebullient', definition: 'Cheerful and full of energy.' },
