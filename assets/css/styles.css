@@ -157,7 +157,7 @@ main {
         padding: 20px;
         width: 80%;
         max-width: 900px;
-        height: 700px;
+        height: 600px;
         background: #D1CBB8;
         border: 2px solid #ccc;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -389,6 +389,57 @@ keyboardbutton:disabled {
     color: #333;
 }
 
+/*Footer styling*/
+footer{
+    background-color: White;
+    border-bottom: 1px solid #a68370;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:WHITE;
+    height: 25px;
+    margin: 5PX;
+    padding: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .footer-container a {
+    color: #48677C;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .footer-container ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  
+  .copyright {
+    padding: 10px 0;
+    text-align: center;
+    color: #48677C;
+    background-color:white;
+    border-radius: 5px;
+  }
+  
+  .footer-container a:hover,
+  .footer-container a:focus {
+      color: #87A09D; 
+      text-decoration: underline;
+  }
+
+
+
+
+
 /* Media queries for different screen sizes */
 @media (max-width: 768px) {
  
@@ -436,6 +487,20 @@ keyboardbutton:disabled {
         padding: 1rem; 
         width: 100%; 
     }
+
+
+/* Footer */
+.footer-container ul {
+    gap: 20px;
+  }
+
+  .footer-container a {
+    font-size: 1.2rem; 
+  }
+
+  .copyright p {
+    font-size: 0.9rem;
+  }
 }
 
 /* For mobile devices (portrait mode) */
@@ -472,4 +537,37 @@ keyboardbutton:disabled {
     .offcanvas-body {
         padding: 10px;
     }
+}
+
+/* Tablet and small laptop (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Footer */
+.footer-container ul {
+    gap: 80px;
+  }
+  
+  .footer-container a {
+    font-size: 2rem;
+  }
+  
+  .copyright p {
+    font-size: 1.3rem;
+  }
+  
+  }
+
+  /* Larger Screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  /* Footer */
+  .footer-container ul {
+    gap: 80px;
+  }
+
+  .footer-container a {
+    font-size: 2rem;
+  }
+
+  .copyright p {
+    font-size: 1.3rem;
+  }
 }
