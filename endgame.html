@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata for character set, description, and viewport -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Guess the Word Game">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+         <!-- Open Graph Metadata for Social Media -->
+        <meta property="og:title" content="WordSmash - Guess the words,smash the letters">
+        <meta property="og:description" content= "Play WordSmash, the ultimate word puzzle game! Smash letters, guess words, and learn new vocabulary.">
+        
+        <!-- Linking Bootstrap CSS for styling -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        
+        <!-- Linking custom styles -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+        <!-- Linking Font Awesome icons -->
+        <script src="https://kit.fontawesome.com/45b8f34d90.js" crossorigin="anonymous"></script>
+       
+        <!-- Favicon for the website -->
+        <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+        
+        <!-- Include jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Page Title -->
+
+        <title>WordSmash</title>
+        </head>
+        <body>
+
+        <header>
+            <nav class="navbar bg-light fixed-top" aria-label="Main Navigation">
+                <div class="container-fluid">
+                    <!-- Left-aligned section: logo and slogan -->
+                    <div class="d-flex align-items-center">
+                        <!-- Game Title and Branding -->
+                        <a id="logo-font" class="navbar-brand" href="index.html" aria-label="Go to WordSmash Homepage">
+                            <h1>WordSmash</h1>
+                        </a>
+        
+                        <!-- Game Slogan -->
+                        <h1 id="slogan-font" class="navbar-text mx-3 d-none d-md-block" aria-label="go to wordsmash">
+                            Smash the Words, Sharpen Your Mind!
+                        </h1>
+                    </div>
+        
+                    <!-- Right-aligned section: toggler button -->
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+                            tabindex="0">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <!-- Offcanvas navigation -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <p class="offcanvas-title" id="offcanvasNavbarLabel">WordSmash</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- Main menu -->
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html" aria-label="Go back to homepage">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="how-to-play.html" aria-label="Rules of the game">Rules</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="startgame.html" aria-label="Start the WordSmash game">Play</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+                  
+        <main>
+            <div class="end-container">
+                <div id="end-game" class="flex-centre flex-column">
+                    <!-- Rotating WordSmash Icon -->
+            <i class="fas fa-book logo rotate"></i>
+
+                      <!-- Game Over Heading -->
+                      <h2 class="h2-end">WordSmash</h2>
+                       <h2 class="h2-end">Game Over</h2>
+
+                <!-- Final Score Section -->
+        <div id="score-display-end">
+        <div class="score-info">
+          <p class="score-end">Your Final Score</p>
+      </div>
+      <div class="score-info">
+          <h2 class="your-score-end" id="final-score-end">0</h2>
+      </div>
+  </div>
+
+  <!-- Personalized Message -->
+  <p id="personalized-message" class="scale-in">Congratulations! Keep smashing those words!</p>
+
+  <!-- Action Buttons -->
+  <div class="buttons">
+      <a href="startgame.html" class="btn">Restart</a>
+      <a href="index.html" class="btn">Home</a>
+  </div>
+</div>
+</div>
+</main>
+  <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="https://www.x.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our X page (opens in a new tab)">
+                        <i class="fa-brands fa-x-twitter"></i></a></li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page (opens in a new tab)">
+                        <i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (opens in a new tab)">
+                        <i class="fa-brands fa-facebook"></i></a>
+                </li>
+                </ul>
+        </div>
+  
+        <!--Copyright section of footer-->
+        <div class="copyright">
+            <p>2025 &copy; WordSmash created by Aisha Shah</p>
+        </div>
+        
+    </footer>
+
+ <!--Script for icons "Font Awesome"-->
+ <script src="https://kit.fontawesome.com/d63b433288.js" crossorigin="anonymous"></script>
+
+ <!-- Link to Bootstrap JavaScript bundle from CDN -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Link to words.js -->
+<script src="assets/js/endgame.js"></script>
+</body>
+
+
+
+</html>

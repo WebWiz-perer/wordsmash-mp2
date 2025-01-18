@@ -389,6 +389,22 @@ keyboardbutton:disabled {
     color: #333;
 }
 
+/*End of Game styling*/
+
+.end-container {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #D1CBB8;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+}
+
+
+
+
 /*Footer styling*/
 footer{
     background-color: White;
