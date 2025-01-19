@@ -391,7 +391,7 @@ keyboardbutton:disabled {
 
 /*End of Game styling*/
 
-.end-container {
+.end-game-container {
     text-align: center;
     background-image:url("../images/endgame.webp");
     background-position: center;
@@ -431,15 +431,15 @@ box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 
 .your-score-end {
     font-size: 3rem;
-    color: #f1c40f; /* Gold color for the score */
+    color: #191710; 
 }
 
-/* Personalized message styling */
-#personalized-message {
+/* Personalised message styling */
+#personalised-message {
     font-size: 1.2rem;
     font-weight: 500;
     margin: 20px 0;
-    color: #ecf0f1; /* Lighter text color */
+    color: #333; /* Lighter text color */
 }
 
 /* Button styling */
