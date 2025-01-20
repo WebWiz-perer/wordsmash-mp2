@@ -24,6 +24,8 @@ const words = [
   { word: 'Acuity', hint: 'Sharpness of thought.', definition: 'Keenness or sharpness in understanding or vision.' }
 ];
 
+// Start the Game by resetting all the scores,index and lives.
+
 function startGame() {
   currentWordIndex = 0;
   score = 0;
@@ -32,6 +34,10 @@ function startGame() {
   updateScoreAndLives();
   createKeyboard();
 }
+
+/**
+ * Starts a 60-second timer and updates the countdown, also resets if already exists.
+ */
 
 function startTimer() {
   clearInterval(timer); 
@@ -45,10 +51,15 @@ function startTimer() {
 
     if (timeLeft <= 0) {
       clearInterval(timer);
-      handleIncorrectWord();
+      
     }
   }, 1000);
 }
+
+/**
+ * Create the on-screen keyboard
+ * @param {string[]} alphabet - The set of letters to create buttons for.
+ */
 
 function createKeyboard() {
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -125,11 +136,16 @@ function displayWord() {
   document.getElementById('definition-section').classList.add('hidden');
 }
 
+/**
+ * Shows the definition of the word and displays the result of the round.
+ * @param {boolean} isWin - Indicates whether the player guessed the word correctly.
+ */
+
 function showDefinition(isWin) {
   const wordObj = words[currentWordIndex];
-  const resultText = isWin 
-    ? '🎉 Congratulations! You guessed the word!\🎉' 
-    : '🤓 Oh, Not to Fret! You learned something new today💪.';
+  const resultText = isWin ? 
+  '🎉 Congratulations! You guessed the word!\🎉' :
+   '🤓 Oh, Not to Fret! You learned something new today💪.';
   document.getElementById('game-result').textContent = resultText;
   document.getElementById('word-definition').textContent = `The word was "${wordObj.word}": ${wordObj.definition}`;
   document.getElementById('definition-section').classList.remove('hidden');

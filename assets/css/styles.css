@@ -30,9 +30,10 @@ main {
 /* Styling for the logo text */
 #logo-font {
     font-family: 'Fruktur', sans-serif;
-    font-size: 48px;
+    font-size: 58px;
     color: #48677C;
-    padding-left: 40px;
+    padding-top: 20px;
+   
 }
 
 /* Styling for the slogan text */
@@ -40,12 +41,10 @@ main {
     font-family: "Qwitcher Grypen", sans-serif;
     font-size: 30px;
     color: #48677C;
+    padding-top: 20px;
 }
 
 /* Styles for the container displaying a random quote */
-
-
-/* Styles for the Word text */
 
 .random-word-container {
     text-align: center;
