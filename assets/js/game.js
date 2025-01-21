@@ -51,7 +51,17 @@ function startTimer() {
 
     if (timeLeft <= 0) {
       clearInterval(timer);
-      
+      Swal.fire({
+        title: 'Time Up!',
+        text: 'The timer has run out. Learn the word and got to next word ot Try again! 👍',
+        icon: 'info',
+        confirmButtonText: 'OK',
+        customClass: {
+          confirmButton: "confirm-btn"
+        }
+      }).then(() => {
+       showDefinition(false);
+       });
     }
   }, 1000);
 }
@@ -74,6 +84,10 @@ function createKeyboard() {
   });
 }
 
+/**
+ * Reveals the correct letters in the word or decreases lives if incorrect.
+ * @param {string} letter - The letter clicked by the user.
+ */
 function handleLetterClick(letter) {
   let correctGuess = false;
   const spans = wordBlanks.querySelectorAll('span');
@@ -89,7 +103,7 @@ function handleLetterClick(letter) {
     updateScoreAndLives();
     if (lives === 0) {
       showDefinition(false);
-      resetGame();
+      return;
     }
   }
 
@@ -141,7 +155,7 @@ function displayWord() {
  * @param {boolean} isWin - Indicates whether the player guessed the word correctly.
  */
 
-function showDefinition(isWin) {
+ function showDefinition(isWin) {
   const wordObj = words[currentWordIndex];
   const resultText = isWin ? 
   '🎉 Congratulations! You guessed the word!\🎉' :
@@ -149,7 +163,7 @@ function showDefinition(isWin) {
   document.getElementById('game-result').textContent = resultText;
   document.getElementById('word-definition').textContent = `The word was "${wordObj.word}": ${wordObj.definition}`;
   document.getElementById('definition-section').classList.remove('hidden');
-}
+ }
 
 nextWordBtn.addEventListener('click', () => {
   if (currentWordIndex < words.length - 1) {

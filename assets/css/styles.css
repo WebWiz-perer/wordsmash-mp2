@@ -389,6 +389,10 @@ keyboardbutton:disabled {
     color: #333;
 }
 
+.hidden {
+    display: none;
+  }
+  
 /*End of Game styling*/
 
 .end-game-container {
