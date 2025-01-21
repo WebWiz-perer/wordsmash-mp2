@@ -88,6 +88,7 @@ function createKeyboard() {
  * Reveals the correct letters in the word or decreases lives if incorrect.
  * @param {string} letter - The letter clicked by the user.
  */
+
 function handleLetterClick(letter) {
   let correctGuess = false;
   const spans = wordBlanks.querySelectorAll('span');
@@ -155,15 +156,23 @@ function displayWord() {
  * @param {boolean} isWin - Indicates whether the player guessed the word correctly.
  */
 
- function showDefinition(isWin) {
+function showDefinition(isWin) {
   const wordObj = words[currentWordIndex];
-  const resultText = isWin ? 
-  '🎉 Congratulations! You guessed the word!\🎉' :
-   '🤓 Oh, Not to Fret! You learned something new today💪.';
-  document.getElementById('game-result').textContent = resultText;
-  document.getElementById('word-definition').textContent = `The word was "${wordObj.word}": ${wordObj.definition}`;
-  document.getElementById('definition-section').classList.remove('hidden');
- }
+  const resultText = isWin 
+    ? '🎉 Congratulations! You guessed the word! 🎉' 
+    : '🤓 Oh, Not to Fret! You learned something new today 💪.';
+
+  // Using Swal.fire to display the message in a popup
+  Swal.fire({
+    title: resultText,
+    text: `The word was "${wordObj.word}": ${wordObj.definition}`,
+    icon: isWin ? 'success' : 'info',
+    confirmButtonText: 'OK',
+    customClass: {
+      confirmButton: "confirm-btn"
+    }
+  });
+}
 
 nextWordBtn.addEventListener('click', () => {
   if (currentWordIndex < words.length - 1) {
