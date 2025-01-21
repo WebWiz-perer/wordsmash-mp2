@@ -392,7 +392,7 @@ keyboardbutton:disabled {
 .hidden {
     display: none;
   }
-  
+
 /*End of Game styling*/
 
 .end-game-container {
@@ -489,6 +489,7 @@ footer{
     color: #48677C;
     text-decoration: none;
     font-size: 1.5rem;
+    gap:15px;
   }
   
   .footer-container ul {
@@ -556,6 +557,14 @@ footer{
 .open-book::before {
     display: none; 
 }
+/* Footer */
+.footer-container ul {
+    gap: 40px;
+  }
+  
+  .footer-container a {
+    font-size: 2rem;
+    }
 }
 /* media queries for max-width:480px */
 
@@ -614,7 +623,16 @@ footer{
     .offcanvas-body {
         padding: 10px;
     }
+    /* Footer */
+.footer-container ul {
+    gap: 20px;
+  }
+  
+  .footer-container a {
+    font-size: 2rem;
+  }
 }
+
 
 /* Tablet and small laptop (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -625,6 +643,7 @@ footer{
   
   .footer-container a {
     font-size: 2rem;
+    gap: 20px;
   }
   
   .copyright p {
@@ -633,6 +652,15 @@ footer{
   
   }
 
+  @media (max-width:1199px) {
+    .footer-container ul {
+        gap: 60px;
+      }
+    
+      .footer-container a {
+        font-size: 2rem;
+      }
+  }
   /* Larger Screens (min-width: 1200px) */
 @media (min-width: 1200px) {
   /* Footer */
