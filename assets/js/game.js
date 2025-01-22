@@ -158,9 +158,9 @@ function displayWord() {
 
 function showDefinition(isWin) {
   const wordObj = words[currentWordIndex];
-  const resultText = isWin 
-    ? '🎉 Congratulations! You guessed the word! 🎉' 
-    : '🤓 Oh, Not to Fret! You learned something new today 💪.';
+  const resultText = isWin ?
+    '🎉 Congratulations! You guessed the word! 🎉' :
+    '🤓 Oh, Not to Fret! You learned something new today 💪.';
 
   // Using Swal.fire to display the message in a popup
   Swal.fire({
@@ -183,14 +183,6 @@ nextWordBtn.addEventListener('click', () => {
   }
 });
 
-function resetGame() {
-  score = 0;
-  lives = 5;
-  currentWordIndex = 0;
-  clearInterval(timer);
-  updateScoreAndLives();
-  startGame();
-}
 
 function endGame() {
   localStorage.setItem("finalScore", score);
