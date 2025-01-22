@@ -668,8 +668,9 @@ footer{
 @media (min-width: 769px) and (max-width: 1024px) {
 
     .random-word-container {
-        max-width: 50%; 
+        max-width: 100%; 
         padding: 1.5rem;
+        margin-top: 15vh;
     }
 
     .random-word-container h1 {
@@ -677,9 +678,12 @@ footer{
     }
 
     .random-word {
-        font-size: 24px; 
+        font-size: 28px; 
     }
-
+    
+    .defination {
+        font-size: 20px;
+    }
     /* Footer */
 .footer-container ul {
     gap: 80px;
