@@ -163,7 +163,6 @@ main {
         border-radius: 10px;
         overflow: hidden;
         position: relative;
-        perspective: 1000px;
         margin: auto; 
     
 }
@@ -219,14 +218,13 @@ h2, h3 {
 
 .main-container{
     text-align: center;
-    margin:auto;
+    margin: auto;
     padding: 2rem;
     background-color: #D1CBB8;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 600px;
     width: 90%;
-    margin-bottom: 2 rem;
 }
 
 
@@ -514,51 +512,97 @@ footer{
       text-decoration: underline;
   }
 
-
-
-
-
 /* Media queries for different screen sizes */
-@media (max-width: 768px) {
- 
-      
-.main-container {
-        padding: 1.5rem; 
-        width: 95%; 
+/* Extra small devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .main-container {
+        padding: 1rem;
+        width: 100%;
+    }
+    .random-word-container {
+        max-width: 95%;
+        padding: 1rem;
+        margin-top: 10px;
+    }
+    .random-word-container h1 {
+        font-size: 24px;
+    }
+    .random-word {
+        font-size: 20px;
     }
 
- /* Random Word Container Adjustments for Tablet */
- .random-word-container {
-    max-width: 90%;
-    margin-top: 100px;
-    padding: 1.5rem;
-    
+    .open-book{
+        flex-direction: column; 
+        width: 100%; 
+        height: auto; 
+        padding: 0;
+    }
+
+    .book-page {
+        width: 100%; 
+        height: auto; 
+        padding: 20px; 
+        box-shadow: none; 
+        border-right: none; 
+        border-bottom: 1px solid #ddd; 
+    }
+
+    .open-book::before {
+        display: none; 
+    }
+    .left-page {
+        margin-bottom: 10px; 
+    }
+
+    .right-page {
+        margin-bottom: 10px;
+    }
+
+    .footer-container ul {
+        gap: 20px;
+    }
+    .footer-container a {
+        font-size: 1.2rem;
+    }
+    .copyright p {
+        font-size: 0.9rem;
+}
 }
 
-.random-word-container h1 {
-    font-size: 30px; 
+/* Small devices (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .main-container {
+        padding: 1.5rem;
+        width: 95%;
+    }
+    .random-word-container {
+        max-width: 90%;
+        margin-top: 50px;
+        padding: 1.5rem;
+    }
+    .random-word-container h1 {
+        font-size: 30px;
+    }
+    .random-word {
+        font-size: 24px;
+    }
+    #slogan-font {
+        font-size: 2rem;
 }
 
-.random-word {
-    font-size: 24px; 
-}
-
-#slogan-font {
-    font-size: 2.0rem;
-    display: block;
-}
-
-/* Adjust navbar toggler button */
-.navbar-toggler {
-    margin-left: auto;
-}
+/* Footer */
+    .footer-container ul {
+        gap: 20px;
+    }
+    .footer-container a {
+        font-size: 2rem;
+    }
 
 .open-book {
     flex-direction: column; 
     height: auto; 
     width: 90%; 
 }
-
 .book-page {
     width: 100%;
     height: auto; 
@@ -566,161 +610,87 @@ footer{
     box-shadow: none; 
     border-right: none; 
     border-bottom: 1px solid #ddd; 
-    overflow-y: auto;
+    
 }
 
 .open-book::before {
     display: none; 
 }
-/* Footer */
-.footer-container ul {
-    gap: 40px;
-  }
-  
-  .footer-container a {
-    font-size: 2rem;
-    }
+
+.left-page {
+    margin-bottom: 20px;
 }
-/* media queries for max-width:480px */
-
-@media (max-width: 480px) {
-    .main-container {
-        padding: 1rem; 
-        width: 100%; 
-    
-
-    /* Random Word Container Adjustments for Mobile */
-    .random-word-container {
-        max-width: 95%;
-        padding: 1rem; 
-       
-    }
-
-    .random-word-container h1 {
-        font-size: 24px; 
-    }
-
-    .random-word {
-        font-size: 20px; 
-
-    }
-}
-/* Footer */
-.footer-container ul {
-    gap: 20px;
-  }
-
-  .footer-container a {
-    font-size: 1.2rem; 
-  }
-
-  .copyright p {
-    font-size: 0.9rem;
-  }
 }
 
-/* For mobile devices (portrait mode) */
-@media (max-width: 576px) {
-    /* Make sure the navbar items stack vertically */
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-nav .nav-item {
-        padding: 5px 0;
-    }
-
-    /* Adjust the logo */
-    #logo-font h1 {
-        font-size: 1.5rem;
-    }
-
-    /* Make the slogan smaller */
-    #slogan-font {
-        font-size: 0.9rem;
-    }
-
-    /* Increase the scrollable height */
-    .book-page {
-        padding: 10px;
-        max-height: 450px; 
-        overflow-y: auto;
-    }
-
-    /* Increase space for offcanvas items */
-    .offcanvas-body {
-        padding: 10px;
-    }
-    /* Footer */
-.footer-container ul {
-    gap: 20px;
-  }
-  
-  .footer-container a {
-    font-size: 2rem;
-  }
-}
-
-
-/* Tablet and small laptop (769px - 1024px) */
+/* Medium devices (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
-
     .random-word-container {
-        max-width: 100%; 
+        max-width: 40%;
         padding: 1.5rem;
-        margin-top: 15vh;
+        margin-top: 100px;
     }
-
     .random-word-container h1 {
-        font-size: 30px; 
+        font-size: 30px;
     }
-
     .random-word {
-        font-size: 28px; 
+        font-size: 28px;
+    }
+    .footer-container ul {
+        gap: 80px;
+    }
+    .footer-container a {
+        font-size: 2rem;
+  }
+  
+  
+    .copyright p {
+        font-size: 1.3rem;
+    }
+        
+    .book-page {
+        overflow-y: scroll;
     }
     
-    .defination {
-        font-size: 20px;
+}
+/* Large devices (1025px - 1199px) */
+@media (min-width: 1025px) and (max-width: 1199px) {
+    .random-word-container {
+        max-width: 100%;
+        padding: 1.5rem;
     }
-    /* Footer */
-.footer-container ul {
-    gap: 80px;
-  }
-  
-  .footer-container a {
-    font-size: 2rem;
-    gap: 20px;
-  }
-  
-  .copyright p {
-    font-size: 1.3rem;
-  }
-  
-  }
-
-  @media (max-width:1199px) {
     .footer-container ul {
         gap: 60px;
       }
-    
-      .footer-container a {
+      
+    .footer-container a {
         font-size: 2rem;
-      }
-  }
-  /* Larger Screens (min-width: 1200px) */
+    }
+}
+
+/* Extra large devices (min-width: 1200px) */
 @media (min-width: 1200px) {
-  /* Footer */
-  .footer-container ul {
-    gap: 80px;
-  }
+    .random-word-container {
+        max-width: 40%;
+        padding: 1.5rem;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
-  .footer-container a {
-    font-size: 2rem;
-  }
-
-  .copyright p {
-    font-size: 1.3rem;
-  }
+    .open-book {
+        max-width: 1400px; 
+        aspect-ratio: 4 / 3; 
+        
+    }
+    .book-page {
+        padding: 30px; 
+    }
+    .footer-container ul {
+        gap: 80px;
+    }
+    .footer-container a {
+        font-size: 2rem;
+    }
+    .copyright p {
+        font-size: 1.3rem;
+    }
 }
