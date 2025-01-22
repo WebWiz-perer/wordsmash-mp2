@@ -527,6 +527,19 @@ footer{
         width: 95%; 
     }
 
+ /* Random Word Container Adjustments for Tablet */
+ .random-word-container {
+    max-width: 90%; /* Slightly smaller for tablets */
+    padding: 1.5rem;
+}
+
+.random-word-container h1 {
+    font-size: 30px; /* Smaller header size for tablet */
+}
+
+.random-word {
+    font-size: 24px; /* Adjust font size for readability */
+}
 
 #slogan-font {
     font-size: 1.0rem;
@@ -572,9 +585,23 @@ footer{
     .main-container {
         padding: 1rem; 
         width: 100%; 
+    
+
+    /* Random Word Container Adjustments for Mobile */
+    .random-word-container {
+        max-width: 95%;
+        padding: 1rem; 
     }
 
+    .random-word-container h1 {
+        font-size: 24px; 
+    }
 
+    .random-word {
+        font-size: 20px; 
+
+    }
+}
 /* Footer */
 .footer-container ul {
     gap: 20px;
@@ -636,6 +663,20 @@ footer{
 
 /* Tablet and small laptop (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
+
+    .random-word-container {
+        max-width: 50%; 
+        padding: 1.5rem;
+    }
+
+    .random-word-container h1 {
+        font-size: 30px; 
+    }
+
+    .random-word {
+        font-size: 24px; 
+    }
+
     /* Footer */
 .footer-container ul {
     gap: 80px;
