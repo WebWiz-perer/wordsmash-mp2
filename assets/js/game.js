@@ -12,16 +12,16 @@ const scoreElement = document.getElementById('score');
 const livesElement = document.getElementById('lives');
 const nextWordBtn = document.getElementById('nextword-btn'); 
 const words = [
-  { word: 'Ebullient', hint: 'Cheerful and full of energy.', definition: 'Showing excitement and enthusiasm.' },
-  { word: 'Ineffable', hint: 'Too great to be expressed in words.', definition: 'Beyond description or expression.' },
-  { word: 'Quixotic', hint: 'Exceedingly idealistic.', definition: 'Impractical and overly romantic.' },
-  { word: 'Peregrinate', hint: 'To travel around.', definition: 'To wander from place to place.' },
-  { word: 'Halcyon', hint: 'A peaceful time.', definition: 'Calm and serene, typically referring to the past.' },
-  { word: 'Serendipity', hint: 'Finding something good by chance.', definition: 'An unexpected and pleasant discovery.' },
-  { word: 'Luminous', hint: 'Radiating light.', definition: 'Bright, shining, or glowing.' },
-  { word: 'Ephemeral', hint: 'Short-lived.', definition: 'Lasting for a very short time.' },
-  { word: 'Sanguine', hint: 'Optimistic.', definition: 'Confident and cheerful in difficult situations.' },
-  { word: 'Acuity', hint: 'Sharpness of thought.', definition: 'Keenness or sharpness in understanding or vision.' }
+  { word: 'Jovial', hint: 'Cheerful and friendly.', definition: 'Full of good humor and joy.' },
+  { word: 'Hasten', hint: 'To move quickly.', definition: 'To hurry or act swiftly.' },
+  { word: 'Gleeful', hint: 'Feeling very happy.', definition: 'Expressing joy or delight.' },
+  { word: 'Dwell', hint: 'To stay in one place.', definition: 'To live or remain in a particular place.' },
+  { word: 'Yearn', hint: 'To long for something.', definition: 'To feel a strong desire or craving.' },
+  { word: 'Impetuous', hint: 'Acting without thinking.', definition: 'Marked by impulsive passion or force.' },
+  { word: 'Sublime', hint: 'Inspiring awe or admiration.', definition: 'Of such beauty or excellence as to inspire great respect or reverence.' },
+  { word: 'Pernicious', hint: 'Harmful in a subtle way.', definition: 'Causing harm or damage, often in a gradual or hidden manner.' },
+  { word: 'Voracious', hint: 'Having a great appetite.', definition: 'Eager or enthusiastic in pursuit of something, especially food or knowledge.' },
+  { word: 'Tenebrous', hint: 'Dark and mysterious.', definition: 'Obscure or shadowy; difficult to understand.' },
 ];
 
 // Start the Game by resetting all the scores,index and lives.

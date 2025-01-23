@@ -30,7 +30,7 @@ main {
 /* Styling for the logo text */
 #logo-font {
     font-family: 'Fruktur', sans-serif;
-    font-size: 58px;
+    font-size: 35px;
     color: #48677C;
     padding-top: 20px;
    
@@ -183,11 +183,6 @@ main {
        }
 
 
-/* Ensure text fits well */
-h2, h3 {
-    margin-top: 0;
-}
-
 /* Specific styles for left and right pages */
 .left-page {
     transform: rotateY(-2deg);
@@ -211,6 +206,17 @@ h2, h3 {
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
+ .btn-playgame {
+    padding:10px;
+    margin:10px;
+    background-color: #6E3953;
+    color: #ffffff;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
 
 /*Game Page*/
 /* Title section*/

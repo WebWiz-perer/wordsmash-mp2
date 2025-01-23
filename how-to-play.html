@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
          <!-- Open Graph Metadata for Social Media -->
-        <meta property="og:title" content="WordSmash - Guess the words,smash the letters"">
+        <meta property="og:title" content="WordSmash - Guess the words,smash the letters">
         <meta property="og:description" content= "Play WordSmash, the ultimate word puzzle game! Smash letters, guess words, and learn new vocabulary.">
         
         <!-- Linking Bootstrap CSS for styling -->
@@ -37,7 +37,7 @@
                     <div class="d-flex align-items-center">
                         <!-- Game Title and Branding -->
                         <a id="logo-font" class="navbar-brand" href="index.html" aria-label="Go to WordSmash Homepage">
-                            <h1>WordSmash</h1>
+                            WordSmash
                         </a>
         
                         <!-- Game Slogan -->
@@ -63,10 +63,10 @@
                             <!-- Main menu -->
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html" aria-label="Go back to homepage">Home</a>
+                                    <a class="nav-link active" href="index.html" aria-label="Go back to homepage">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="how-to-play.html" aria-label="Rules of the game">Rules</a>
+                                    <a class="nav-link " href="how-to-play.html" aria-label="Rules of the game">Rules</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="startgame.html" aria-label="Start the WordSmash game">Play</a>
@@ -77,12 +77,12 @@
                 </div>
             </nav>
         </header>
-        <main>
+         <main>
             <div class="open-book">
                 <div class="book-page left-page">
                     <h2>How to Play WordSmash</h2>
-                    <h3>Objective:</h3>
-                    <p>Guess the hidden word by filling in the blanks before losing all your books. Improve your vocabulary by learning the word’s definition at the end!</p>
+                    <p>Guess the hidden word by filling in the blanks before losing all your books. 
+                        Improve your vocabulary by learning the word’s definition at the end!</p>
                     <h3>Game Rules</h3>
                     <ul>
                         <li>A random word is selected, and its definition or hint is displayed to help you guess the word.</li>
@@ -100,13 +100,18 @@
                     <h3>Challenge Yourself</h3>
                     <ul>
                         <li>A timer counts down for each round to challenge yourself.</li>
-                        <li>Guess the word within the time limit to earn bonus points!</li>
+                        <li>Once you run out of time, restart or go to next word</li>
                     </ul>
                     <h3>Scoring</h3>
                     <ul>
-                        <li>10 points for correctly guessing the word. 5 bonus points if you solve it without losing a book.</li>
+                        <li>10 points for correctly guessing the word. </li>
                     </ul>
                     <p><strong>Have Fun and Learn!</strong></p>
+                    <div class="text-center mt-4">
+                        <a href="startgame.html" class="btn-playgame" role="button" aria-label="Start playing WordSmash now!">
+                            Start Game
+                        </a>
+                    </div>
                 </div>
             </div>
             </main>
@@ -131,15 +136,17 @@
                 </li>
                 </ul>
         </div>
-  
+   
         <!--Copyright section of footer-->
         <div class="copyright">
             <p>2025 &copy; WordSmash created by Aisha Shah</p>
         </div>
+        </footer>
+
             <!--Script for icons "Font Awesome"-->
  <script src="https://kit.fontawesome.com/d63b433288.js" crossorigin="anonymous"></script>
 
  <!-- Link to Bootstrap JavaScript bundle from CDN -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-            </body>
-            </html>
+    </body>
+ </html>
