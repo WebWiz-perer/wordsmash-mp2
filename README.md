@@ -157,3 +157,94 @@ Fun and Progressive Learning: Deliver a game that entertains players while helpi
 -  (Muted Rose) for Next Word Button: Muted rose represents urgency and action, making it perfect for the "Next Word" button. It creates a sense of momentum and guides the user through the game with an engaging call to action.
 - (Rich Brown) for Social Icons: The rich brown color for social icons gives them a grounded, professional look. It ensures that the icons are visible yet unobtrusive, maintaining a balanced and clean design.
 -  (Muted Teal) for Social Icons Hover: When hovered over, the social icons change to the muted teal, making the interaction clear and engaging while staying in harmony with the overall color scheme of the site.
+
+### Typography
+
+![fonts.jpg](documentation/fonts.jpg)
+
+#### Logo and Body Font - Fruktur
+
+The "Fruktur" font brings a dramatic, bold, and slightly vintage feel to the "Wordsmash" logo. Its distinctive style immediately captures attention and gives the game a unique identity. Styled in a deep and vibrant color (#ff5722), it conveys both excitement and energy, perfectly reflecting the game's dynamic and engaging nature.
+
+- **Typeface:** 'Fruktur', sans-serif
+
+- **Usage:** This font is utilized for the logo text in a larger size, prominently positioned at the top-left corner of the navbar to establish strong branding and visibility. Additionally, Fruktur is applied throughout the website to maintain a cohesive and harmonious design.
+
+#### Slogan Font - Qwitcher Grypen
+ For slogan " Qwitcher-Gryphen" is used which delivers a clean, modern, and highly readable experience. This sans-serif typeface combines simplicity with a slightly playful touch, ensuring that the overall design feels polished yet approachable.
+
+
+- **Typeface:** 'Qwitcher-Gryphen', cursive
+- **Usage:** Qwitcher-Gryphen" is reserved for the site's slogan, displayed at the center of each page. It gives the slogan a distinctive, handcrafted feel, setting it apart from other textual content and giving it a friendly, inviting character.
+
+
+### Wordsmash Logo
+
+![Logo](documentation/logo.jpg)
+"WORDSMASH" bursts onto the screen in bold, striking letters, styled in the 'Fruktur' font. This font adds a dynamic and playful energy, perfectly capturing the excitement and creativity of smashing words together. The confident, eye-catching design paired with the cool blue tone (#48677C) gives it a fun yet polished vibe, inviting players to jump in and test their word skills. The logo feels like it’s saying, “Get ready to think fast and have a blast!” It sets the tone for an engaging and competitive experience while remaining approachable and full of personality.
+## Features
+
+### Navigation
+The navigation on the Wordsmash website is designed with a focus on accessibility and a clean, user-friendly interface. The navbar is fixed at the top, ensuring users can easily access all features as they scroll through the page. Below is a detailed description of the navigation elements:
+
+#### Navbar
+
+##### Desktop View:
+
+- **Positioning:** The navbar is fixed at the top of the page, making it easy for users to access it at all times, even while scrolling.
+- **Logo and Slogan:** The Wordsmash logo stands out on the left, in bold Fruktur font. Clicking on the logo will either take the user to the homepage or refresh the page. Alongside, the slogan "Smash words, unlock fun" aligns to the left, complementing the dynamic branding and adding to the playful theme.
+- **Hamburger Menu:** Located at the upper right corner, it expands to provide links to various pages:
+    - **Home:** Directs users back to the homepage.
+    - **Rule:** Leads to instructions on how to play.
+    - **Play:**  Leads to the game page where users can start playing.
+    This layout ensures that all site features are accessible and easy to navigate, enriching the user's experience.
+
+**Desktop Navbar Image:**
+
+![Desktop Navbar Image](documentation/navbardesktop.jpg)
+
+**Desktop Navbar Image with the opened Hamburger Menu**
+
+![nav-desktop-open-menu.jpg](documentation/nav-desktop-open-menu.jpg)
+
+##### Responsive Design:
+
+**Tablet View:**
+
+- The navigation adapts for tablet devices, ensuring a user-friendly
+layout.
+
+**Tablet Navbar Image:**
+
+![Tablet Navbar Image](documentation/nav-tablet.jpg)
+
+**Tablet Navbar Image with the opened Hamburger Menu**
+
+![nav-tablet-open-menu.jpg](documentation/nav-tablet-open-menu.jpg)
+
+##### **Mobile View:**
+
+- On mobile devices, the WordSmah website's navbar is simplified for a seamless user experience. The logo is placed on the left, and the hamburger menu on the right, ensuring easy access to all site features.
+  
+- To reduce clutter and improve visibility, the slogan is hidden on smaller screens, allowing for a cleaner, more focused interface.
+  
+- This design approach optimizes both accessibility and aesthetics, making the best use of the limited screen space on mobile devices.
+
+**Mobile Navbar Image:**
+
+![Mobile Navbar Image](documentation/navmobile.jpg)
+
+**Mobile Navbar Image with the opened Hamburger Menu:**
+
+![nav-mobile-open-menu.jpg](documentation/navmobile-openmenu.jpg)
+
+### Footer
+Connect with us on social media and stay updated on our latest events and offerings:
+
+- **Instagram**: [Follow us in ](https://instagram.com/)
+- **Facebook**: [Like our page](https://facebook.com/)
+- **Twitter**: [Tweet with us](https://twitter.com/)
+-**Copyright**: 2025[WordSmash] 
+
+![Footer](Documentation/websiteimages/footer.png)
+ 
