@@ -188,16 +188,23 @@ The "Fruktur" font brings a dramatic, bold, and slightly vintage feel to the "Wo
 The navigation on the Wordsmash website is designed with a focus on accessibility and a clean, user-friendly interface. The navbar is fixed at the top, ensuring users can easily access all features as they scroll through the page. Below is a detailed description of the navigation elements:
 
 #### Navbar
+The navigation for WordSmash is designed to ensure an intuitive and accessible user experience across devices, with features optimized for clarity and responsiveness.
 
-##### Desktop View:
+- **Positioning:** The navbar is fixed at the top of the screen, ensuring easy access to the navigation options as users scroll through the page.
+- **Logo and Slogan:**
+- The WordSmash logo, styled with a distinctive font, is prominently displayed on the left. It serves as a clickable link to return users to the homepage.
+- Beside the logo, the slogan "Smash the Words, Sharpen Your Mind!" is displayed in a friendly, inviting manner, visible on larger screens for enhanced branding.
 
-- **Positioning:** The navbar is fixed at the top of the page, making it easy for users to access it at all times, even while scrolling.
-- **Logo and Slogan:** The Wordsmash logo stands out on the left, in bold Fruktur font. Clicking on the logo will either take the user to the homepage or refresh the page. Alongside, the slogan "Smash words, unlock fun" aligns to the left, complementing the dynamic branding and adding to the playful theme.
-- **Hamburger Menu:** Located at the upper right corner, it expands to provide links to various pages:
-    - **Home:** Directs users back to the homepage.
-    - **Rule:** Leads to instructions on how to play.
-    - **Play:**  Leads to the game page where users can start playing.
-    This layout ensures that all site features are accessible and easy to navigate, enriching the user's experience.
+- **Hamburger Menu:** 
+  Positioned on the right, the hamburger icon expands into an off-canvas menu on smaller screens. This ensures that navigation options remain accessible while maintaining a clean design.
+
+- **OffCanvas Menu**
+The menu includes the following links:
+
+**Home**: Takes users back to the homepage.
+**Rules**: Provides detailed instructions on how to play WordSmash.
+**Play**: Directs users to the game interface to start playing.
+This seamless navigation ensures users can easily explore and interact with the site, regardless of the device they are using.
 
 **Desktop Navbar Image:**
 
@@ -248,3 +255,43 @@ Connect with us on social media and stay updated on our latest events and offeri
 
 ![Footer](Documentation/websiteimages/footer.png)
  
+### Landing Page(Home)
+The landing page captures attention with its functional and visually engaging design.
+[Home](documentation/websites/homehtml.png)
+**Random Word Feature:**
+The "Learn a New Word!" section is centrally placed to encourage vocabulary-building. It dynamically displays a word alongside its definition, making learning engaging and interactive.
+The "Loading" placeholder transitions into a random word with its corresponding meaning fetched from the backend or a preloaded database.
+[Randomword](documentation/websites/newword.png)
+**Call-to-Action Buttons:**
+Two prominent buttons beneath the random word section guide users:
+
+- **How to Play**: Redirects users to the rules page, making it easy to understand the gameplay mechanics.
+- **Start Game**: Encourages users to dive right into the game, maintaining momentum and interest.
+[HomeButtons](documentation/websites/buttonshome.png)
+
+### How To Play page:
+[Rules Page](documentation/websites/rulespage.png)
+**Open Book Layout**
+The "How to Play" section employs a creative open-book design to make the information visually appealing and organized. Each "page" presents detailed instructions, rules, and features.
+
+**Left Page: Game Introduction and Rules**
+**Introduction:**
+A concise explanation introduces users to the game mechanics, including the fun and educational aspect of the gameplay.
+**Game Rules:**
+- Rules are outlined in a bulleted list for easy readability:
+  - A random word is chosen, and its hint or definition is displayed.
+  - The player guesses the word by selecting letters.
+  - Five "books" act as the player’s lives. Incorrect guesses deduct one "book."
+  - The goal is to guess the word before all "books" are lost.
+
+**Right Page: Challenges and Rewards** 
+**Win or Learn:**
+- Even if players fail to guess the word, they still learn by seeing the correct word and its definition, blending entertainment with education.
+**Challenges:**
+- Players can challenge themselves with a countdown timer for each word.
+- Encourages quick thinking while maintaining fun gameplay.
+- Scoring:
+Points system detailed (e.g., 10 points per correctly guessed word).
+- A "Start Game" button, prominently centered, invites players to begin immediately.
+This layout makes instructions easy to follow and increases user engagement by using an interactive, thematic design.
+

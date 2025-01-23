@@ -72,7 +72,7 @@ main {
     font-family: 'Fruktur', sans-serif;
     color: inherit;
     background: none;
-    cursor: hand;
+    cursor: pointer;
     padding: 25px 60px;
     display: inline-block;
     margin: 15px 30px;
