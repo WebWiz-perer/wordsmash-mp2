@@ -170,19 +170,28 @@ function showDefinition(isWin) {
     confirmButtonText: 'OK',
     customClass: {
       confirmButton: "confirm-btn"
-    }
+    },
+  }).then(() => {
+    moveToNextWord();
   });
 }
-
-nextWordBtn.addEventListener('click', () => {
+/**
+ * Moves to the next word or ends the game if all words are completed
+ */
+function moveToNextWord() {
   if (currentWordIndex < words.length - 1) {
     currentWordIndex++;
     displayWord();
   } else {
     endGame();
   }
-});
+}
 
+nextWordBtn.addEventListener('click', moveToNextWord);
+
+ /**
+ * Ends the game and redirects to the endgame page
+ */
 
 function endGame() {
   localStorage.setItem("finalScore", score);

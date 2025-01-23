@@ -295,3 +295,29 @@ Points system detailed (e.g., 10 points per correctly guessed word).
 - A "Start Game" button, prominently centered, invites players to begin immediately.
 This layout makes instructions easy to follow and increases user engagement by using an interactive, thematic design.
 
+
+## Game Page 
+[Game Page](documentation/websites/gamepage.png)
+
+The main content area is focused on providing a clear, interactive environment for the gameplay experience. The layout ensures that users know how much time they have left, how many chances they have, and what letters have already been guessed.
+
+**Title**
+ The page starts with a game title that reads "Smash the Word!", followed by a "Best of Luck!" message, creating an inviting atmosphere.
+ **Lives**
+ Five icons of books are displayed to represent the user's lives (i.e., the number of incorrect guesses allowed before the game ends).
+ **Score**
+ The score is displayed in the upper-left corner, showing the points the user has accumulated for correct guesses.
+**Timer**
+ A countdown timer is displayed, encouraging players to guess the word within a limited timeframe. The timer adds a layer of challenge to the game.
+ **Hint**
+ A hint for the word is displayed to assist players in guessing the correct word. This could be a description or a clue related to the word.
+ **Word Blanks**
+ The blanks for the word are shown in a series of underscores (e.g., _ _ _ _ _), and as players guess letters, these blanks are filled in to reveal the word.
+ **On-Screen Keyboard**
+ The virtual keyboard is displayed below the word blanks, allowing users to select letters and make their guesses without typing on their physical keyboard. This feature improves accessibility and adds interactivity to the game.
+ **Game Result and Defination**
+ After the word is either guessed correctly or the timer runs out, the game result and the definition of the word are displayed.
+ This section offers educational value, helping players learn new words and their meanings even if they don’t guess correctly.
+ **Next Word and Back to home Buttons**
+  - If the user guesses the word correctly or the round ends, they can move on to the next word by clicking the Next Word button.
+  - Users who want to return to the homepage can click the Back to Home button, which is especially useful for users who want to take a break or restart the game.
