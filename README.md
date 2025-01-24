@@ -1,6 +1,8 @@
 # Word Smash Game
 
-## [Live view]
+![Responsive Mockup](documentation/websiteimages/amiresponsive.png)
+
+The live website is here [WordSmash](https://webwiz-perer.github.io/wordsmash-mp2/)
 
 ### Word Smash - An Educational Vocabulary Builder
 
@@ -369,14 +371,14 @@ The main content area is focused on providing a clear, interactive environment f
 -	Displays a welcome message and a new word with defination.The word changes everytime the page is refresed or revisited.
 -	Provides buttons to navigate to the game page or the rules page.
 
-![homePage]((documentation/websiteimages/homehtml.png))
+![homePage](documentation/websiteimages/homehtml.png)
 
 2.	Game Page (start-game.html):
 
 -	Displays the game interface where blanks are shown.
 -	Each word have 5 lives or chances for incorrect letter.
 
-![words]((documentation/websiteimages/endPage.png))
+![words](documentation/websiteimages/gamepage.png)
 
 -	Users have a set time limit to answer each question.
 
@@ -386,15 +388,14 @@ The main content area is focused on providing a clear, interactive environment f
 
 ![guessed](documentation/websiteimages/endPage.png)
 
-![notguessed](documentation/websiteimages/endPage.png)
 
 -	Score is updated based on correct guessed words.
 
-![score](documentation/websiteimages/endPage.png)
+![score](documentation/websiteimages/ENDPAGE.png)
 
 -	Once all words are guessed, the user is redirected to the end game page.
 
-![endPage](documentation/websiteimages/endPage.png)
+![endPage]()
 
 3.	Rules Page (rules.html):
 -	Presents the rules of the game to the user.
@@ -407,7 +408,7 @@ The main content area is focused on providing a clear, interactive environment f
 -	Provides a personalized message based on the score achieved.
 -	Allows users to restart the game or return to the homepage.
 
-![endPage](documentation/websiteimages/endPage.png)
+![endPage](documentation/websiteimages/ENDPAGE.png)
 
 5.	CSS Styling:
 -	Ensures a consistent and visually appealing layout across all pages.
