@@ -157,14 +157,14 @@ function displayWord() {
 function handleError() {
   Swal.fire({
     title: 'Error!',
-    text: 'An error occurred while accessing your next word. Restarting the game.',
+    text: 'An error occurred while loading your next word. Please return to the homepage.',
     icon: 'error',
-    confirmButtonText: 'Restart Game',
+    confirmButtonText: 'Back to Home',
     customClass: {
       confirmButton: "confirm-btn"
     }
   }).then(() => {
-    window.location.href = "startgame.html"; // Redirect to the start game page
+    window.location.href = "index.html";
   });
 }
 

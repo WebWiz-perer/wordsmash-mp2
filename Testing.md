@@ -151,3 +151,59 @@ Game Features |  |  |  |  |
 |Result Page|					
 |Restart Button|	Click the "Restart" button on the result page.|	Game restarts from the first word. | Yes | Yes |
 |Home Page Link|	Click the "Home Page" link on the result page.|	User is redirected to the home page. |	Yes	| Yes |
+
+## User Stories Manual Testing
+
+### First-Time User Goals
+- **As a first-time player, I want to start a new game easily so I can begin playing WordSmash without any hassle.**  
+  | **Test Case**      | **Steps** | **Expected Result** | **Outcome**  |
+  | --- | --- | --- | --- |
+  | Start a New Game   | 1. Open the game's homepage.<br>2. Click "Start Game". | The game should start, and the player should be directed to the game page with the first word displayed. | Successful   |
+
+- **As a first-time player, I want to view clear game rules so I can understand how to play before starting.**  
+  | **Test Case** | **Steps** | **Expected Result** | **Outcome**  |
+  | --- | --- | --- | --- |
+  | Provide Clear Gameplay Instructions | 1. Click on the "How to Play" button.   | A modal/page explaining game mechanics and scoring should appear. | Successful   |
+
+- **As a first-time player, I want the game to look attractive and be easy to navigate so I can enjoy the experience right away.**  
+  | **Test Case**  | **Steps** | **Expected Result**  | **Outcome**  |
+  | --- | --- | --- | --- |
+  | Attractive Interface Design | 1. Navigate through all pages.<br>2. Observe layout and graphics. | Interface should be visually appealing with clear navigation.  | Successful |
+
+### Returning Player Goals
+- **As a returning player, I want to see my current score during the game so I can monitor my improvement.**  
+  | **Test Case** | **Steps** | **Expected Result**  | **Outcome**  |
+  | --- | ---  | ---  | --- |
+  | Track Current Score | 1. Start a new game.<br>2. Observe score updates after answering. | The score should update dynamically after each correct answer. | Successful |
+
+- **As a returning player, I want feedback on my guesses so I can learn new words and improve my vocabulary.**  
+  | **Test Case**   | **Steps**  | **Expected Result** | **Outcome**  |
+  | --- | --- | --- | --- |
+  | Feedback on answers | 1. Start a game.<br>2. Answer correctly or incorrectly. | Immediate feedback should indicate correctness, with visual highlights adn supporting text. | Successful |
+
+- **As a returning player, I want the option to restart the game after finishing so I can try to beat my previous score.**  
+  | **Test Case** | **Steps** | **Expected Result** | **Outcome**  |
+  | ---  | ---  | --- | --- |
+  | Restart Game | 1. On results page, click "Restart Game". | Game should reset, presenting fresh word challenges and resetting progress. | Successful |
+
+### Frequent Player Goals
+- **As a frequent player, I want each word challenge to include a timer so I can enjoy a fast-paced and exciting experience.**  
+  | **Test Case** | **Steps**  | **Expected Result** | **Outcome**  |
+  | ---   | --- | --- | --- |
+  | Timer for Each Challenge | 1. Start a game.<br>2. Observe timer. | Timer should appear for each word, clearly showing remaining time. | Successful   |
+
+- **As a frequent player, I want the game to work well on any device or screen size so I can play on my preferred platform anytime.**  
+  | **Test Case**  | **Steps**  | **Expected Result** | **Outcome**  |
+  | ---  | --- | --- | --- |
+  | Cross-Device Compatibility | 1. Open game on desktop, tablet, and mobile.<br>2. Test in different browsers. | Game should load and function smoothly across devices and browsers. | Successful   |
+
+- **As a frequent player, I want new word puzzles and updates so the experience remains fresh and engaging.**  
+  | **Test Case**                    | **Steps**                        | **Expected Result**                          | **Outcome**  |
+  | --- | ---  | --- | --- |
+  | Create Engaging Word Challenges along with Learn a new word feature| 1. Start game.<br>2. Review word pool. | Everytime the home page is revisited new word can be seen. | Successful   |
+
+### Conclude the Game Effectively
+- **As a player, I want the game to end automatically and display my final score.**  
+  | **Test Case** | **Steps** | **Expected Result**  | **Outcome**  |
+  | --- | --- | --- | --- |
+  | End Game and View Final Score | 1. Complete all word challenges. | Game should end automatically, transitioning to results page with the final score displayed. | Successful |
