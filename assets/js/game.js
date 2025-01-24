@@ -128,7 +128,7 @@ function updateScoreAndLives() {
 function displayWord() {
   const wordObj = words[currentWordIndex];
   if (!wordObj) {
-    console.error("No word found for current index:", currentWordIndex);
+    handleError();
     return;
   }
 
@@ -152,10 +152,26 @@ function displayWord() {
 }
 
 /**
+ * Handles the scenario where a word is missing or out of range.
+ */
+function handleError() {
+  Swal.fire({
+    title: 'Error!',
+    text: 'An error occurred while accessing your next word. Restarting the game.',
+    icon: 'error',
+    confirmButtonText: 'Restart Game',
+    customClass: {
+      confirmButton: "confirm-btn"
+    }
+  }).then(() => {
+    window.location.href = "startgame.html"; // Redirect to the start game page
+  });
+}
+
+/**
  * Shows the definition of the word and displays the result of the round.
  * @param {boolean} isWin - Indicates whether the player guessed the word correctly.
  */
-
 function showDefinition(isWin) {
   const wordObj = words[currentWordIndex];
   const resultText = isWin ?

@@ -169,7 +169,7 @@ Fun and Progressive Learning: Deliver a game that entertains players while helpi
     
 
  ### Colour Scheme
-![colorscheme.jpg](documentation/colorscheme.jpg)
+![colorscheme.jpg](documentation/project2 colours .png)
 #### Color Palette
 - Background for All Pages: #D1CBB8 (Warm Beige)
 - Logo Text: #48677C (Muted Teal)
@@ -209,7 +209,7 @@ The "Fruktur" font brings a dramatic, bold, and slightly vintage feel to the "Wo
 
 ### Wordsmash Logo
 
-![Logo](documentation/logo.jpg)
+![Logo](documentation/websiteimages/logo.png)
 "WORDSMASH" bursts onto the screen in bold, striking letters, styled in the 'Fruktur' font. This font adds a dynamic and playful energy, perfectly capturing the excitement and creativity of smashing words together. The confident, eye-catching design paired with the cool blue tone (#48677C) gives it a fun yet polished vibe, inviting players to jump in and test their word skills. The logo feels like it’s saying, “Get ready to think fast and have a blast!” It sets the tone for an engaging and competitive experience while remaining approachable and full of personality.
 ## Features
 
@@ -237,26 +237,11 @@ This seamless navigation ensures users can easily explore and interact with the 
 
 **Desktop Navbar Image:**
 
-![Desktop Navbar Image](documentation/navbardesktop.jpg)
+![Desktop Navbar Image](documentation/websiteimages/navbardesktop.png)
 
 **Desktop Navbar Image with the opened Hamburger Menu**
 
-![nav-desktop-open-menu.jpg](documentation/nav-desktop-open-menu.jpg)
-
-##### Responsive Design:
-
-**Tablet View:**
-
-- The navigation adapts for tablet devices, ensuring a user-friendly
-layout.
-
-**Tablet Navbar Image:**
-
-![Tablet Navbar Image](documentation/nav-tablet.jpg)
-
-**Tablet Navbar Image with the opened Hamburger Menu**
-
-![nav-tablet-open-menu.jpg](documentation/nav-tablet-open-menu.jpg)
+![nav-desktop-open-menu.jpg](documentation/websiteimages/menuopendesktop.png)
 
 ##### **Mobile View:**
 
@@ -268,11 +253,11 @@ layout.
 
 **Mobile Navbar Image:**
 
-![Mobile Navbar Image](documentation/navmobile.jpg)
+![Mobile Navbar Image](documentation/websiteimages/navbarmob.png)
 
 **Mobile Navbar Image with the opened Hamburger Menu:**
 
-![nav-mobile-open-menu.jpg](documentation/navmobile-openmenu.jpg)
+![nav-mobile-open-menu.jpg](documentation/websiteimages/menuopenmob.png)
 
 ### Footer
 Connect with us on social media and stay updated on our latest events and offerings:
@@ -282,30 +267,37 @@ Connect with us on social media and stay updated on our latest events and offeri
 - **Twitter**: [Tweet with us](https://twitter.com/)
 -**Copyright**: 2025[WordSmash] 
 
-![Footer](Documentation/websiteimages/footer.png)
+![Footer](documentation/websiteimages/footer.png)
  
 ### Landing Page(Home)
 The landing page captures attention with its functional and visually engaging design.
-[Home](documentation/websites/homehtml.png)
+![Home](documentation/websiteimages/homehtml.png)
+
 **Random Word Feature:**
 The "Learn a New Word!" section is centrally placed to encourage vocabulary-building. It dynamically displays a word alongside its definition, making learning engaging and interactive.
-The "Loading" placeholder transitions into a random word with its corresponding meaning fetched from the backend or a preloaded database.
-[Randomword](documentation/websiteimages/newword.png)
+The "Loading" placeholder transitions into a random word with its corresponding meaning fetched from the preloaded database.
+![Randomword](documentation/websiteimages/newword.png)
+
 **Call-to-Action Buttons:**
 Two prominent buttons beneath the random word section guide users:
 
 - **How to Play**: Redirects users to the rules page, making it easy to understand the gameplay mechanics.
+
 - **Start Game**: Encourages users to dive right into the game, maintaining momentum and interest.
-[HomeButtons](documentation/websiteimages/buttonshome.png)
+![HomeButtons](documentation/websiteimages/buttonshome.png)
+
 
 ### How To Play page:
-[Rules Page](documentation/websiteimages/rulespage.png)
+![Rules Page](documentation/websiteimages/rulespage.png)
+
 **Open Book Layout**
 The "How to Play" section employs a creative open-book design to make the information visually appealing and organized. Each "page" presents detailed instructions, rules, and features.
 
 **Left Page: Game Introduction and Rules**
+
 **Introduction:**
 A concise explanation introduces users to the game mechanics, including the fun and educational aspect of the gameplay.
+
 **Game Rules:**
 - Rules are outlined in a bulleted list for easy readability:
   - A random word is chosen, and its hint or definition is displayed.
@@ -316,6 +308,7 @@ A concise explanation introduces users to the game mechanics, including the fun 
 **Right Page: Challenges and Rewards** 
 **Win or Learn:**
 - Even if players fail to guess the word, they still learn by seeing the correct word and its definition, blending entertainment with education.
+
 **Challenges:**
 - Players can challenge themselves with a countdown timer for each word.
 - Encourages quick thinking while maintaining fun gameplay.
@@ -326,7 +319,7 @@ This layout makes instructions easy to follow and increases user engagement by u
 
 
 ## Game Page 
-[Game Page](documentation/websiteimages/gamepage.png)
+![Game Page](documentation/websiteimages/gamepage.png)
 
 The main content area is focused on providing a clear, interactive environment for the gameplay experience. The layout ensures that users know how much time they have left, how many chances they have, and what letters have already been guessed.
 
