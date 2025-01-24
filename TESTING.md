@@ -207,3 +207,29 @@ Game Features |  |  |  |  |
   | **Test Case** | **Steps** | **Expected Result**  | **Outcome**  |
   | --- | --- | --- | --- |
   | End Game and View Final Score | 1. Complete all word challenges. | Game should end automatically, transitioning to results page with the final score displayed. | Successful |
+
+
+## Fixed Bugs
+### 1. Bug Description: **Timer Issues**
+
+**Problem:** Timer was not resetting properly between rounds as it did not clear the setInterval timer before starting a new one.
+
+**Solution:**  Used clearInterval(timer) before starting a new setInterval.
+
+### 2. Bug Description: **Words Repeating**
+
+**Problem** Words were repeating before the entire word list was exhausted due to lack of tracking for already-used words in the words array.
+
+**Solution:** Properly used the currentWordIndex to track the current word, and ensured the index only increments.
+
+### 3. Bug Description: **Keyboard Not Re-Rendering**
+
+**Problem** The on-screen keyboard did not refresh correctly after moving to the next word.
+
+**Solution:**  Rebuilt the keyboard in the createKeyboard() function every time a new word was displayed.
+
+### 4. **Bug Description**
+
+**Problem** Clicking on incorrect letters provided no feedback or reduced lives multiple times per click.
+
+**Solution:** Ensured lives decrement only once for each incorrect guess and provided immediate visual feedback.Also added (keyboardButtons) in handleLetterClick(letter) function so that when user clicks a letter, it loops through all the keyboard buttons and disable the button that matches the clicked letter (button.textContent === letter).

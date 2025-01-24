@@ -74,7 +74,6 @@ function startTimer() {
 function createKeyboard() {
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   keyboard.innerHTML = ''; 
-
   alphabet.split('').forEach(letter => {
     const button = document.createElement('button');
     button.textContent = letter;
@@ -90,7 +89,15 @@ function createKeyboard() {
  */
 
 function handleLetterClick(letter) {
-  let correctGuess = false;
+  const keyboardButtons = document.querySelectorAll('#keyboard button');
+  keyboardButtons.forEach(button => {
+    if (button.textContent === letter) {
+      button.disabled = true; // Disable the clicked button
+      button.classList.add('disabled'); // Add the 'disabled' class for styling
+    }
+  });
+  
+let correctGuess = false;
   const spans = wordBlanks.querySelectorAll('span');
   spans.forEach(span => {
     if (span.getAttribute('data-letter') === letter) {

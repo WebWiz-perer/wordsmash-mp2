@@ -361,7 +361,7 @@ cancel-btn:hover {
     background-color: #87A09D;
 }
 
-keyboardbutton:disabled {
+#keyboard button.disabled {
     background-color: #ccc;
     cursor: not-allowed;
 }

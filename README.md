@@ -381,6 +381,7 @@ The main content area is focused on providing a clear, interactive environment f
 
 -	Score is updated based on correct guessed words.
 
+
 ![score](documentation/websiteimages/ENDPAGE.png)
 
 -	Once all words are guessed, the user is redirected to the end game page.
@@ -388,12 +389,14 @@ The main content area is focused on providing a clear, interactive environment f
 ![endPage]()
 
 3.	Rules Page (rules.html):
+
 -	Presents the rules of the game to the user.
 -	Provides guidance on how to play, including time limits and scoring.
 
 ![rulesPage](documentation/websiteimages/endPage.png)
 
 4.	End Game Page (end-game.html):
+
 -	Displays the final score achieved by the user.
 -	Provides a personalized message based on the score achieved.
 -	Allows users to restart the game or return to the homepage.
@@ -401,18 +404,23 @@ The main content area is focused on providing a clear, interactive environment f
 ![endPage](documentation/websiteimages/ENDPAGE.png)
 
 5.	CSS Styling:
+
 -	Ensures a consistent and visually appealing layout across all pages.
 -	Utilizes CSS animations for interactive elements such as buttons and logo rotation.
 -	Implements responsive design to adapt to various screen sizes.
 
 6.	JavaScript Functionality:
+
 **Dynamic Word Display**
+
 The game dynamically displays a word from a predefined array of objects. Each word is presented as a series of underscores (_), representing unguessed letters.
 
 **Hint Integration:**
+
 Each word is accompanied by a hint, providing players with context to assist in their guesses. Hints are displayed prominently above the word blanks.
 
 **Interactive Keyboard**
+
 An on-screen keyboard is dynamically generated with clickable buttons for each letter of the alphabet.
 - Clicking a letter triggers a check to determine if the guessed letter exists in the word.
 - Correct guesses reveal letters in their respective positions.
@@ -422,9 +430,11 @@ An on-screen keyboard is dynamically generated with clickable buttons for each l
  The player's lives are visually represented using book icons. Each incorrect guess removes one book icon, providing a clear indication of remaining chances.
 
 **Score Tracking:**
+
 A live score counter updates whenever the player correctly guesses a word. The score is displayed at all times in the UI.
 
 **Countdown Timer:**
+
 - A 60-second timer starts with each new word.
 - The timer updates in real-time, providing a sense of urgency.
 - If the timer reaches zero, the game ends the current round and reveals the word’s definition.
@@ -432,22 +442,119 @@ A live score counter updates whenever the player correctly guesses a word. The s
 - At the end of each round, the game shows the word's definition and a message indicating success or encouragement.
 
 **Success Message: Celebrates correct guesses**
+
 Encouragement Message: Offers support when the player doesn’t guess correctly, encouraging learning.
 Navigation Between Words:
 A "Next Word" button allows players to move to the next word in the list. When all words are completed, the game transitions to the endgame phase.
 
 **Endgame Functionality:**
+
 At the end of the game:
 
 - The final score is saved in local storage.
 - The game redirects the player to an Endgame Page to view their performance and replay options.
 
  **Responsive Popup Messages:**
+
 The game uses SweetAlert (Swal.fire) for visually appealing, interactive popups to:
 - Notify the player when the timer runs out.
 - Congratulate the player for correct guesses.
 - Display the correct word and its definition.
 
 **Error Handling:**
+
 Includes fallback mechanisms, such as logging errors if no word exists for the current index.
+
+## Future Enhancements:
+
+The current version of Word Smash offers an enjoyable experience but as it was designed initially to get MVP, there are several potential features and improvements that could elevate the gameplay and user interaction. Some possible future additions include:
+
+1. Difficulty Levels: Provide players with the option to choose between different difficulty levels (easy, medium, hard) to cater to a variety of skill levels and challenges.
+
+2. Category Selection: Allow users to select specific word categories (e.g., adjectives, verbs or others) to focus on topics of interest.
+
+3. Multiplayer Mode: Introduce a multiplayer mode where players can compete against friends or other users in real-time word challenges.
+
+4. Leaderboard: Add a leaderboard to display high scores and rankings, encouraging competition and engagement among players.
+
+5. Sound Effects and Music: Include sound effects for correct and incorrect guesses, as well as background music to heighten the excitement and overall experience.
+
+6. Customization Options: Allow players to personalize their game by adjusting light or dark themes.
+
+7. Use of API's :Use external API's to include arange of different words to make it more challenging.
+
+## Testing
+
+[Testing Section](TESTING.md)
+
+ ## Deployment
+
+ The project was deployed using GitHub pages. The steps to deploy using GitHub pages are:
+
+ 1. Go to the repository on GitHub.com
+ 2. Select 'Settings' near the top of the page.
+ 3. Select 'Pages' from the menu bar on the left of the page.
+ 4. Under 'Source' select the 'Branch' dropdown menu and select the main branch.
+ 5. Once selected, click the 'Save'.
+ 6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
+ 
+
+## Technologies-used
+  
+  ## Languages
+* [HTML](https://en.wikipedia.org/wiki/HTML "HTML")
+* [CSS](https://en.wikipedia.org/wiki/CSS "CSS")
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+## Libraries & Framework
+* [Google Fonts](https://fonts.google.com/ "Google Fonts")
+* [Font Awesome library](https://fontawesome.com/ "Font Awesome")
+* [SweetAlert2](https://sweetalert2.github.io/) 
+## Tools
+ - [Am I Responsive](http://ami.responsivedesign.is/) - Used to verify responsiveness of website on different devices.
+ - [Responsinator](http://www.responsinator.com/) - Used to verify responsiveness of website on different devices.
+ - [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.
+ - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
+ - [Shuttershock](http://shuttershock.com/) - Used for images and videos.
+ - [Font Awesome](https://fontawesome.com/) - Used for Social Media icons in footer and contact icons on contact forms.
+ - [GitHub](https://github.com/) - Used for version control and hosting.
+ - [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
+ - [TinyPNG](https://tinypng.com/) - Used to compress images to reduce file size without a reduction in quality.
+ - [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
+
+## Credits
+
+ ## Code
+ - Template Code for navigation was used from Bootsrap 5.3 and then modified to suit the needs for my project.
+
+ -Inspiration for the services card was taken from Board games walkthrough project and then used Bootstarp 5.3 to modify according to the projects.
+
+ - Forms and button inspiration was taken from  [W3C](https://www.w3schools.com/csS/css3_buttons.asp) and [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/components/buttons/)
+
+ ### Contents
+ The inspiration was taken from wordgames and hangman games and the vocabulary words were taken from Dictionary and chat gpt was used to rephrase own words in more user friendly and professional manner.
+
+ - [Hangman game](https://hangmanwordgame.com/)Provided inspiration and ideas for building the game.
+
+- [Code Institute](https://codeinstitute.net): Provided structured learning resources and support for web development skills.
+
+- [Slack Community](https://slack.com/intl/en-gb): Engaged in the Slack community for Code Institute, receiving valuable support, feedback, and guidance throughout the development process.
+
+- [Chatgpt](https://chatgpt.com/) 
+
+
+ ### Media
+All the media images and video were generated from AI using shuttershock.I own the license for both the videos and all the images.
+
+[Shuttershock](www.shuttershock.com)
+
+
+ ## Acknowledgements
+ My mentor Sheryl for her support and advice on every aspect of the project.
+
+ The course facilitator Marco for his continous support and constructive feedback.
+
+ The tutors for helping whenever there was a brain fog.
+
+ The Code Institute slack community for their quick responses and wealth of knowledge
 
