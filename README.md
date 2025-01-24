@@ -93,7 +93,7 @@ Fun and Progressive Learning: Deliver a game that entertains players while helpi
 - Offer immediate feedback after each response, clearly stating whether the answer was correct or incorrect.
 - Highlight the correct answer when an incorrect choice is made to enhance learning and memory retention.
 
-5. mShow Real-Time Scoring
+5. Show Real-Time Scoring
 - Display the player’s score during gameplay, updating it dynamically after each challenge.
 - Ensure the scoring system reflects accurate performance based on correct and timely answers.
 
@@ -118,7 +118,7 @@ Fun and Progressive Learning: Deliver a game that entertains players while helpi
 - Provide a "Restart Game" feature on the results page to allow players to start a new game instantly.
 - Reset scores and present a fresh set of challenges to ensure replayability.
 
-### structure for the website:
+### Structure for the website:
 1.	Homepage (index.html):
 -	Welcome message and game logo.
 -	Start Game button.
@@ -127,9 +127,6 @@ Fun and Progressive Learning: Deliver a game that entertains players while helpi
 -	Display the game interface.
 -	Timer display for each question.
 -	Score display.
--	Question number indicator.
--	Question prompt.
--	Multiple-choice options for answers.
 -	Navigation buttons to return to the homepage or view game rules.
 3.	Rules Page (rules.html):
 -	Introduction to the game.
