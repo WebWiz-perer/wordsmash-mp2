@@ -163,6 +163,7 @@ function showDefinition(isWin) {
     '🤓 Oh, Not to Fret! You learned something new today 💪.';
 
   // Using Swal.fire to display the message in a popup
+
   Swal.fire({
     title: resultText,
     text: `The word was "${wordObj.word}": ${wordObj.definition}`,
@@ -175,9 +176,7 @@ function showDefinition(isWin) {
     moveToNextWord();
   });
 }
-/**
- * Moves to the next word or ends the game if all words are completed
- */
+
 function moveToNextWord() {
   if (currentWordIndex < words.length - 1) {
     currentWordIndex++;
@@ -189,7 +188,7 @@ function moveToNextWord() {
 
 nextWordBtn.addEventListener('click', moveToNextWord);
 
- /**
+/**
  * Ends the game and redirects to the endgame page
  */
 

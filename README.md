@@ -116,6 +116,36 @@ Fun and Progressive Learning: Deliver a game that entertains players while helpi
 - Provide a "Restart Game" feature on the results page to allow players to start a new game instantly.
 - Reset scores and present a fresh set of challenges to ensure replayability.
 
+### structure for the website:
+1.	Homepage (index.html):
+-	Welcome message and game logo.
+-	Start Game button.
+-	Option to view game rules.
+2.	Game Page (start-game.html):
+-	Display the game interface.
+-	Timer display for each question.
+-	Score display.
+-	Question number indicator.
+-	Question prompt.
+-	Multiple-choice options for answers.
+-	Navigation buttons to return to the homepage or view game rules.
+3.	Rules Page (rules.html):
+-	Introduction to the game.
+-	Explanation of game rules.
+-	Clarification of scoring system.
+-	Instructions on how to play.
+-	Navigation buttons to start the game or return to the homepage.
+4.	End Game Page (end-game.html):
+-	Display the final score.
+-	Personalised message based on the score achieved.
+-	Option to restart the game.
+-	Option to return to the homepage.
+5.	Assets Folder:
+-	CSS Folder:
+-	Stylesheet (styles.css) for styling the website.
+-	JS Folder:
+-	JavaScript files (script.js and end.js) for implementing game logic and functionality.
+
 ### Wireframes
 
 - Home Page
@@ -261,16 +291,16 @@ The landing page captures attention with its functional and visually engaging de
 **Random Word Feature:**
 The "Learn a New Word!" section is centrally placed to encourage vocabulary-building. It dynamically displays a word alongside its definition, making learning engaging and interactive.
 The "Loading" placeholder transitions into a random word with its corresponding meaning fetched from the backend or a preloaded database.
-[Randomword](documentation/websites/newword.png)
+[Randomword](documentation/websiteimages/newword.png)
 **Call-to-Action Buttons:**
 Two prominent buttons beneath the random word section guide users:
 
 - **How to Play**: Redirects users to the rules page, making it easy to understand the gameplay mechanics.
 - **Start Game**: Encourages users to dive right into the game, maintaining momentum and interest.
-[HomeButtons](documentation/websites/buttonshome.png)
+[HomeButtons](documentation/websiteimages/buttonshome.png)
 
 ### How To Play page:
-[Rules Page](documentation/websites/rulespage.png)
+[Rules Page](documentation/websiteimages/rulespage.png)
 **Open Book Layout**
 The "How to Play" section employs a creative open-book design to make the information visually appealing and organized. Each "page" presents detailed instructions, rules, and features.
 
@@ -297,27 +327,136 @@ This layout makes instructions easy to follow and increases user engagement by u
 
 
 ## Game Page 
-[Game Page](documentation/websites/gamepage.png)
+[Game Page](documentation/websiteimages/gamepage.png)
 
 The main content area is focused on providing a clear, interactive environment for the gameplay experience. The layout ensures that users know how much time they have left, how many chances they have, and what letters have already been guessed.
 
-**Title**
+ **Title**
  The page starts with a game title that reads "Smash the Word!", followed by a "Best of Luck!" message, creating an inviting atmosphere.
- **Lives**
+**Lives**
  Five icons of books are displayed to represent the user's lives (i.e., the number of incorrect guesses allowed before the game ends).
- **Score**
+
+  **Score**
  The score is displayed in the upper-left corner, showing the points the user has accumulated for correct guesses.
+
 **Timer**
  A countdown timer is displayed, encouraging players to guess the word within a limited timeframe. The timer adds a layer of challenge to the game.
+
  **Hint**
  A hint for the word is displayed to assist players in guessing the correct word. This could be a description or a clue related to the word.
+
  **Word Blanks**
  The blanks for the word are shown in a series of underscores (e.g., _ _ _ _ _), and as players guess letters, these blanks are filled in to reveal the word.
- **On-Screen Keyboard**
+
+  **On-Screen Keyboard**
  The virtual keyboard is displayed below the word blanks, allowing users to select letters and make their guesses without typing on their physical keyboard. This feature improves accessibility and adds interactivity to the game.
- **Game Result and Defination**
+
+  **Game Result and Defination**
  After the word is either guessed correctly or the timer runs out, the game result and the definition of the word are displayed.
  This section offers educational value, helping players learn new words and their meanings even if they don’t guess correctly.
+
  **Next Word and Back to home Buttons**
   - If the user guesses the word correctly or the round ends, they can move on to the next word by clicking the Next Word button.
   - Users who want to return to the homepage can click the Back to Home button, which is especially useful for users who want to take a break or restart the game.
+
+## End Result Page
+
+
+
+## Logic
+
+1.	Homepage (index.html):
+-	Displays a welcome message and a new word with defination.The word changes everytime the page is refresed or revisited.
+-	Provides buttons to navigate to the game page or the rules page.
+
+![homePage]((documentation/websiteimages/homehtml.png))
+
+2.	Game Page (start-game.html):
+
+-	Displays the game interface where blanks are shown.
+-	Each word have 5 lives or chances for incorrect letter.
+
+![words]((documentation/websiteimages/endPage.png))
+
+-	Users have a set time limit to answer each question.
+
+![timer]((documentation/websiteimages/endPage.png))
+
+- If the user guesses the word correctly, they are congratulated and deination is shown.If the word is not guessed or they ran out of time still the word defination and word will be revealed.
+
+![guessed](documentation/websiteimages/endPage.png)
+
+![notguessed](documentation/websiteimages/endPage.png)
+
+-	Score is updated based on correct guessed words.
+
+![score](documentation/websiteimages/endPage.png)
+
+-	Once all words are guessed, the user is redirected to the end game page.
+
+![endPage](documentation/websiteimages/endPage.png)
+
+3.	Rules Page (rules.html):
+-	Presents the rules of the game to the user.
+-	Provides guidance on how to play, including time limits and scoring.
+
+![rulesPage](documentation/websiteimages/endPage.png)
+
+4.	End Game Page (end-game.html):
+-	Displays the final score achieved by the user.
+-	Provides a personalized message based on the score achieved.
+-	Allows users to restart the game or return to the homepage.
+
+![endPage](documentation/websiteimages/endPage.png)
+
+5.	CSS Styling:
+-	Ensures a consistent and visually appealing layout across all pages.
+-	Utilizes CSS animations for interactive elements such as buttons and logo rotation.
+-	Implements responsive design to adapt to various screen sizes.
+
+6.	JavaScript Functionality:
+**Dynamic Word Display**
+The game dynamically displays a word from a predefined array of objects. Each word is presented as a series of underscores (_), representing unguessed letters.
+
+**Hint Integration:**
+Each word is accompanied by a hint, providing players with context to assist in their guesses. Hints are displayed prominently above the word blanks.
+
+**Interactive Keyboard**
+An on-screen keyboard is dynamically generated with clickable buttons for each letter of the alphabet.
+- Clicking a letter triggers a check to determine if the guessed letter exists in the word.
+- Correct guesses reveal letters in their respective positions.
+- Incorrect guesses reduce the player's remaining lives.
+- Lives Representation:
+
+ The player's lives are visually represented using book icons. Each incorrect guess removes one book icon, providing a clear indication of remaining chances.
+
+**Score Tracking:**
+A live score counter updates whenever the player correctly guesses a word. The score is displayed at all times in the UI.
+
+**Countdown Timer:**
+- A 60-second timer starts with each new word.
+- The timer updates in real-time, providing a sense of urgency.
+- If the timer reaches zero, the game ends the current round and reveals the word’s definition.
+- Definition and Result Display:
+- At the end of each round, the game shows the word's definition and a message indicating success or encouragement.
+
+**Success Message: Celebrates correct guesses**
+Encouragement Message: Offers support when the player doesn’t guess correctly, encouraging learning.
+Navigation Between Words:
+A "Next Word" button allows players to move to the next word in the list. When all words are completed, the game transitions to the endgame phase.
+
+**Endgame Functionality:**
+At the end of the game:
+
+- The final score is saved in local storage.
+- The game redirects the player to an Endgame Page to view their performance and replay options.
+
+ **Responsive Popup Messages:**
+The game uses SweetAlert (Swal.fire) for visually appealing, interactive popups to:
+- Notify the player when the timer runs out.
+- Congratulate the player for correct guesses.
+- Display the correct word and its definition.
+
+**Error Handling:**
+Includes fallback mechanisms, such as logging errors if no word exists for the current index.
+

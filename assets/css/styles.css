@@ -382,7 +382,7 @@ keyboardbutton:disabled {
 
 .end-game-container {
     text-align: center;
-    background-image:url("../images/endgame.webp");
+    background:linear-gradient(to right, #48677C, #87A09D);
     background-position: center;
     background-size: cover;
     margin: 2rem auto;
@@ -497,7 +497,7 @@ footer{
   .footer-container a:focus {
       color: #87A09D; 
       text-decoration: underline;
-  }
+    }
 
 /* Media queries for different screen sizes */
 /* Extra small devices (max-width: 480px) */
