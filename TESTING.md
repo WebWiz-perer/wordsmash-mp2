@@ -123,6 +123,16 @@ Desktop:
 
 ![How to play LightHouse m](documentation/lighthouse/RulesLH.png)
 
+**Start Gamepage**
+
+Desktop:
+
+![Start game LightHouse](documentation/lighthouse/LHstartgame.png)
+
+Mobile:
+
+![StartgamepageM](documentation/lighthouse/gamem.png)
+
 **End Gamepage**
 
 Desktop:
@@ -131,9 +141,9 @@ Desktop:
 
 Mobile:
 
-![EndgamepageM](documentation/lighthouse/game mobileLH.png)
+![EndGamepage LightHouse](documentation/lighthouse/resultM.png)
 
-# Manual Testing Plan
+# Manual Testing 
 
 ### Overview
 This document outlines the test cases, expected results, and testing outcomes for the various features of the WordSmash application.
