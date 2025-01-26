@@ -2,23 +2,59 @@
 
 ![Responsive Mockup](documentation/websiteimages/amiresponsive.png)
 
+
 The live website is here [WordSmash](https://webwiz-perer.github.io/wordsmash-mp2/)
+
+## Responsiveness 
+
+<details>
+<summary>index Page</summary>
+
+![Am I Responsive Screenshot](documentation/websiteimages/amiresponsive.png)
+
+</details>
+
+<details>
+<summary>How to Play Page</summary>
+
+![Am I Responsive rules](documentation/websiteimages/amiresponsiverules.png)
+
+</details>
+
+
+<details>
+<summary>Start Game page</summary>
+
+![Am I Responsive game](documentation/websiteimages/amiresponsivegame.png)
+
+</details>
+
+
+<details>
+<summary> End page</summary>
+
+![Am I Responsive end](documentation/websiteimages/amiresponsiveend.png)
+
+</details>
+
+
 
 ### Word Smash - An Educational Vocabulary Builder
 
-The primary intention behind creating this project is to promote learning and education in an engaging manner. In this project, I have utilized HTML to structure the application, CSS to style and enhance its visual appeal, and JavaScript to implement dynamic functionality, ensuring an interactive and seamless user experience. Additionally, EmailJS is integrated to collect valuable user feedback about the app, while media queries and Bootstrap have been employed to make the application fully responsive and accessible across various devices.
+The primary intention behind creating this project is to promote learning and education in an engaging manner. In this project, I have utilized HTML to structure the application, CSS to style and enhance its visual appeal, and JavaScript to implement dynamic functionality, ensuring an interactive and seamless user experience. Additionally, media queries and Bootstrap have been employed to make the application fully responsive and accessible across various devices.
 
-Word Smash is not just a vocabulary game—it's an immersive educational tool designed to help users improve their vocabulary while having fun. Each word is accompanied by meaningful definitions, pronunciations, and examples to provide deeper insights and encourage learning.
+Word Smash is not just a vocabulary game—it's an immersive educational tool designed to help users improve their vocabulary while having fun. Each word is accompanied by meaningful hints and definitions to provide deeper insights and encourage learning.
 
 The app includes multiple features aimed at enriching the user experience:
 
 ## Interactive Gameplay: 
-- Players can easily start a new game with a prominent "Start Game" button for quick access.
-- Multiple-choice questions are provided to challenge players on world geography and enhance their knowledge.
-- Immediate feedback is given for each question, indicating correct or incorrect answers to facilitate learning.
+- Players can easily start a new WordSmash challenge with a prominent "Start Game" button for instant access.
+- Guessing letters and filling in blanks offer an exciting and interactive way to test vocabulary skills and learn new words.
+- Immediate feedback is provided for each guessed letter, enhancing the learning experience.
 
-## Word of the Day
- - A "Word of the Day" feature introduces players to new terms or concepts related to geography, enhancing their vocabulary and knowledge base.
+## Learn a new word:
+
+ - The "Learn a new word" feature introduces players to new word with defination thus enhancing their vocabulary and knowledge base.
 
 ## Scoring System:
  - The current score is displayed prominently during gameplay, updating in real-time as the player progresses.
@@ -35,16 +71,20 @@ Word Smash is more than just a word game; it’s a dynamic educational tool craf
 Word Smash is more than just a word game—it’s an engaging educational tool designed to enhance vocabulary and foster learning in a fun and interactive way. Here’s how it supports players in building essential skills:
 
 ### Vocabulary Expansion:
-Players encounter a variety of words at different difficulty levels, allowing them to progressively enhance their vocabulary in an enjoyable and challenging environment.
+
+Players encounter a diverse selection of words, helping them expand their vocabulary in a fun and engaging way.
 
 ### Critical Thinking and Problem-Solving:
+
 The game encourages players to think strategically and use hints effectively to guess words, sharpening their cognitive abilities.
 
 ### Interactive and Fun Learning:
+
 The interactive gameplay keeps players engaged, making learning new words an exciting and memorable experience.
 
 ### Motivation Through Achievement:
-With features like a scoring system and missed words tracker, players are motivated to revisit and improve on their performance, fostering a sense of accomplishment.
+
+With features like a scoring system, players are encouraged to improve their performance and achieve higher scores, fostering a sense of accomplishment.
 
 Word Smash is not just a game; it’s an exciting journey where players expand their vocabulary and boost their knowledge, all while having fun. Dive into the world of Word Smash and take a step closer to mastering words with every challenge! 🚀📚
 
@@ -149,27 +189,29 @@ Fun and Progressive Learning: Deliver a game that entertains players while helpi
 
 - Home Page
     
-    ![Home Page](documentation/wireframes/indexpage.jpg)
+    ![Home Page](documentation/wireframes/Wireframe-Home.png)
 
 - How to Play Page
     
-    ![Rules Page](documentation/wireframes/how-to-play-.jpg)
+    ![Rules Page](documentation/wireframes/Rules-Wireframe.png)
     
 - Game Page
     
-    ![Game Page](documentation/wireframes/startgame.jpg)
+    ![Game Page](documentation/wireframes/wireframe-games.png)
     
 - EndGame
     
-    ![EndGame](documentation/wireframes/endgame.jpg)
+    ![EndGame](documentation/wireframes/wireframes-endpage.png)
     
-- Map of website
+- Mobile and tablet wireframes
     
-    ![Map of website](documentation/map.png)
+    ![Mobile and tablet wireframes](documentation/wireframes/Wireframes-all.png)
     
 
  ### Colour Scheme
-![colorscheme.jpg](documentation/project2 colours .png)
+![colorscheme.jpg](documentation/project2coolors.png)
+
+
 #### Color Palette
 - Background for All Pages: #D1CBB8 (Warm Beige)
 - Logo Text: #48677C (Muted Teal)
@@ -189,7 +231,7 @@ Fun and Progressive Learning: Deliver a game that entertains players while helpi
 
 ### Typography
 
-![fonts.jpg](documentation/fonts.jpg)
+![fonts](documentation/websiteimages/Fonts.png)
 
 #### Logo and Body Font - Fruktur
 
@@ -204,6 +246,7 @@ The "Fruktur" font brings a dramatic, bold, and slightly vintage feel to the "Wo
 
 
 - **Typeface:** 'Qwitcher-Gryphen', cursive
+
 - **Usage:** Qwitcher-Gryphen" is reserved for the site's slogan, displayed at the center of each page. It gives the slogan a distinctive, handcrafted feel, setting it apart from other textual content and giving it a friendly, inviting character.
 
 
@@ -211,6 +254,8 @@ The "Fruktur" font brings a dramatic, bold, and slightly vintage feel to the "Wo
 
 ![Logo](documentation/websiteimages/logo.png)
 "WORDSMASH" bursts onto the screen in bold, striking letters, styled in the 'Fruktur' font. This font adds a dynamic and playful energy, perfectly capturing the excitement and creativity of smashing words together. The confident, eye-catching design paired with the cool blue tone (#48677C) gives it a fun yet polished vibe, inviting players to jump in and test their word skills. The logo feels like it’s saying, “Get ready to think fast and have a blast!” It sets the tone for an engaging and competitive experience while remaining approachable and full of personality.
+
+
 ## Features
 
 ### Navigation
@@ -353,7 +398,9 @@ The main content area is focused on providing a clear, interactive environment f
 
 ## End Result Page
 
-
+	Displays the final score achieved by the user.
+-	Provides a personalized message based on the score achieved.
+-	Allows users to restart the game or return to the homepage.
 
 ## Logic
 
@@ -372,34 +419,41 @@ The main content area is focused on providing a clear, interactive environment f
 
 -	Users have a set time limit to answer each question.
 
-![timer]((documentation/websiteimages/endPage.png))
+![timer](documentation/websiteimages/timer.png)
 
-- If the user guesses the word correctly, they are congratulated and deination is shown.If the word is not guessed or they ran out of time still the word defination and word will be revealed.
+- When the word is guessed correctly , user is cogratulated and defination is shown to enhance the knowledge
 
-![guessed](documentation/websiteimages/endPage.png)
+ ![Word Guessed](documentation/websiteimages/wordguessed.png)
 
+ When the word is not guessed and user runs out of lives , the user is encouraged with a message to stay positive, as the definition is displayed to ensure they’ve learned a new word.
+
+![Word not Guessed](documentation/websiteimages/notguessed.png)
+
+If the user has not guessed the word and runs out of time, a message is shown that they have run out of time.
+
+![Time runout](/workspace/wordsmash-mp2/documentation/websiteimages/timerunout.png)
 
 -	Score is updated based on correct guessed words.
 
 
-![score](documentation/websiteimages/ENDPAGE.png)
+![score](documentation/websiteimages/score.png)
 
 -	Once all words are guessed, the user is redirected to the end game page.
 
-![endPage]()
+![endPage](documentation/websiteimages/ENDPAGE.png)
 
 3.	Rules Page (rules.html):
 
 -	Presents the rules of the game to the user.
 -	Provides guidance on how to play, including time limits and scoring.
 
-![rulesPage](documentation/websiteimages/endPage.png)
+![rulesPage](documentation/websiteimages/rulespage.png)
 
 4.	End Game Page (end-game.html):
 
--	Displays the final score achieved by the user.
--	Provides a personalized message based on the score achieved.
--	Allows users to restart the game or return to the homepage.
+- Shows the user's final score.
+- Provides a personalized message based on their performance.
+- Offers options to restart the game or navigate back to the homepage.
 
 ![endPage](documentation/websiteimages/ENDPAGE.png)
 
@@ -425,26 +479,35 @@ An on-screen keyboard is dynamically generated with clickable buttons for each l
 - Clicking a letter triggers a check to determine if the guessed letter exists in the word.
 - Correct guesses reveal letters in their respective positions.
 - Incorrect guesses reduce the player's remaining lives.
-- Lives Representation:
+- Letters already guessed are disabled to prevent repeated guesses.
+
+![Disable letters](documentation/websiteimages/disableguessedwords.png)
+
+
+- **Lives Representation:**
 
  The player's lives are visually represented using book icons. Each incorrect guess removes one book icon, providing a clear indication of remaining chances.
 
 **Score Tracking:**
 
 A live score counter updates whenever the player correctly guesses a word. The score is displayed at all times in the UI.
+![Score and Lives](documentation/websiteimages/scoreandlives.png)
+
 
 **Countdown Timer:**
 
 - A 60-second timer starts with each new word.
 - The timer updates in real-time, providing a sense of urgency.
 - If the timer reaches zero, the game ends the current round and reveals the word’s definition.
-- Definition and Result Display:
+
+**Definition and Result Display:**
 - At the end of each round, the game shows the word's definition and a message indicating success or encouragement.
 
-**Success Message: Celebrates correct guesses**
+**Success Message:** Celebrates correct guesses
 
-Encouragement Message: Offers support when the player doesn’t guess correctly, encouraging learning.
-Navigation Between Words:
+**Encouragement Message:** Offers support when the player doesn’t guess correctly, encouraging learning.
+
+**Navigation Between Words:**
 A "Next Word" button allows players to move to the next word in the list. When all words are completed, the game transitions to the endgame phase.
 
 **Endgame Functionality:**
@@ -464,6 +527,7 @@ The game uses SweetAlert (Swal.fire) for visually appealing, interactive popups 
 **Error Handling:**
 
 Includes fallback mechanisms, such as logging errors if no word exists for the current index.
+![Error Handling](documentation/websiteimages/Error.png)
 
 ## Future Enhancements:
 
@@ -471,7 +535,7 @@ The current version of Word Smash offers an enjoyable experience but as it was d
 
 1. Difficulty Levels: Provide players with the option to choose between different difficulty levels (easy, medium, hard) to cater to a variety of skill levels and challenges.
 
-2. Category Selection: Allow users to select specific word categories (e.g., adjectives, verbs or others) to focus on topics of interest.
+2. Category Selection: Allow users to select specific word categories (e.g., adjectives, words related to geography and human anatomy or others) to focus on topics of interest.
 
 3. Multiplayer Mode: Introduce a multiplayer mode where players can compete against friends or other users in real-time word challenges.
 
@@ -482,6 +546,8 @@ The current version of Word Smash offers an enjoyable experience but as it was d
 6. Customization Options: Allow players to personalize their game by adjusting light or dark themes.
 
 7. Use of API's :Use external API's to include arange of different words to make it more challenging.
+
+8. Leaderboard: Showcase top scores and global rankings.
 
 ## Testing
 
@@ -527,7 +593,7 @@ The current version of Word Smash offers an enjoyable experience but as it was d
  ## Code
  - Template Code for navigation was used from Bootsrap 5.3 and then modified to suit the needs for my project.
 
- -Inspiration for the services card was taken from Board games walkthrough project and then used Bootstarp 5.3 to modify according to the projects.
+ -Inspiration for the design was taken from Geography game project.
 
  - Forms and button inspiration was taken from  [W3C](https://www.w3schools.com/csS/css3_buttons.asp) and [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/components/buttons/)
 

@@ -1,31 +1,53 @@
 ## Testing
 
+### Compatibility
+
+In order to confirm the correct functionality, responsiveness, and
+appearance:
+
+- The website was tested on the following browsers: Chrome, Firefox,
+Safari.
+
+| Browser tested | Intended appearance | Intended responsiveness |
+| --- | --- | --- |
+| Chrome | Good | Good |
+| FireFox | Good | Good |
+| Safari | Good | Good |
+
 ### Responsiveness
 
 The functionality of the links in the website was checked as well by
 different users. The website was checked by extension
 “**Responsive Viewer**” in Chrome.
 
-Screen sizes
+**Screen sizes**
+- iphone 14 pro 393x852 (Minor difference in appearance between Edge/Safari and Chrome)
+- Pixel 7 Pro 480x1040
+- Iphone 14 pro max 430x932
+- ipad air 5 820x1180
+- Macbook Air 1559x975
 
-![Screen sizes](documentation/responsiveness/sizes-respons.jpg)
+
 
 - **Home page**
 
-![Home page](documentation/responsiveness/home-page-respons.jpg)
+![Home page](documentation/websiteimages/resposivehome.png)
 
 
-- **Rule page**
+- **How to Play page**
     
-    ![Learn page](documentation/responsiveness/learn-page-respons.jpg)
+    ![How to Play page](documentation/websiteimages/responsiverules1.png)
+
+    ![How to Play page](documentation/websiteimages/responsivenessrules2.png)
+
 
 - **Start Game page**
     
-    ![Guess the flag page](documentation/responsiveness/guess-the-flag-respons.jpg)
+    ![Startgame](documentation/websiteimages/Responsivessgame.png)
 
 - **Result page**
 
-![Result page](documentation/responsiveness/result-page-respons.jpg)
+![Result page](documentation/websiteimages/responsivegameover.png)
 
 ### Validator testing
 
@@ -69,7 +91,7 @@ assets/js/randomwords.js
 
 assets/js/startgame.js
 
-![startgamejshint.png](documentation/jshint/jshint-startgame.png)
+![startgamejshint.png](documentation/jshint/jshintG.png)
 
 **Endgame.js**
 
@@ -87,28 +109,29 @@ are readable.
 
 Desktop:
 
-![Home page LightHouse](documentation/lighthouse/index-desktop-lighthouse.jpg)
+![Home page LightHouse](documentation/lighthouse/IndexLHD.png)
 
 Mobile:
 
-![Home page LightHouse m](documentation/lighthouse/index-mobile-lighthouse.jpg)
+![Home page LightHouse m](documentation/lighthouse/IndexLHMobile.png)
 
-**Rule page**
+**How to play page**
 
 Desktop:
 
-![Home page LightHouse](documentation/lighthouse/rule-desktop-lighthouse.jpg)
+![How to play LightHouse](documentation/lighthouse/RulesLHD.png)
 
+![How to play LightHouse m](documentation/lighthouse/RulesLH.png)
 
 **End Gamepage**
 
 Desktop:
 
-![EndGamepage LightHouse](documentation/lighthouse/result-desktop-lighthouse.jpg)
+![EndGamepage LightHouse](documentation/lighthouse/ResultLHD.png)
 
 Mobile:
 
-![EndGame page LightHouse m](documentation/lighthouse/result-mobile-lighthouse.jpg)
+![EndgamepageM](documentation/lighthouse/game mobileLH.png)
 
 # Manual Testing Plan
 
@@ -138,10 +161,10 @@ This document outlines the test cases, expected results, and testing outcomes fo
 | Start Game Button Functionality | Click on the start game Button | The user is redirected to the "Game" page | Yes | Yes | 
 |  Next word and Back to home Options | Click on any of the option buttons and you are directed to related pages| . | Yes | Yes | The buttons remain in place. |
 | Back to Home Page Link | Click on the "Back toHome Page" link | Upon clicking the link, user will be redirected to home page. | Yes | Yes |  |
-| Confirm Redirecting | Click on the "OK" button in the confirmation popup. | The user is redirected to the Home page | Yes | Yes |  |
-Game Features |  |  |  |  |					
+Game Features 
 |Random Word Display| On page load, verify a random word of the day is displayed.| A random word and its definition are displayed.|	Yes | Yes |	
 | Keyboard Interaction | Click any letter on the keyboard during gameplay.|Correctly guessed letters appear in the blanks; incorrect guesses decrease lives.| Yes | Yes|	
+|Used letter disabled| The letters are clicked only once during the round.| Already guessed letters are disabled and appear in grey| Yes | Yes|	
 | Hint Display | Verify the hint displayed matches the current word.| A relevant hint is displayed for each word.|	Yes |	Yes |	
 | Timer Functionality |	Allow the timer to run out during a round.|	Timer reaches zero, and the word is marked as incorrect.|	Yes| Yes |
 | Score and Lives Update |	Guess letters correctly or incorrectly and check the score and lives.| Score increases for correct guesses; lives decrease for incorrect guesses.|	Yes	| Yes |	
@@ -233,3 +256,15 @@ Game Features |  |  |  |  |
 **Problem** Clicking on incorrect letters provided no feedback or reduced lives multiple times per click.
 
 **Solution:** Ensured lives decrement only once for each incorrect guess and provided immediate visual feedback.Also added (keyboardButtons) in handleLetterClick(letter) function so that when user clicks a letter, it loops through all the keyboard buttons and disable the button that matches the clicked letter (button.textContent === letter).
+
+### Unsolved Bugs
+
+To the best of my knowledge, there are no unresolved bugs at the
+moment.
+
+### Mistakes
+
+Initially, I did not document bugs as they arose during the coding process.
+I have since recognized the importance of logging bugs in real-time for more effective tracking and resolution.
+For future projects, I will ensure to keep a thorough record of all bugs encountered and their resolution steps throughout the development process.
+
