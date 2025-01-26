@@ -515,7 +515,7 @@ footer{
     .random-word-container {
         max-width: 95%;
         padding: 1rem;
-        margin-top: 10px;
+        margin-top: 13vh;
     }
 
     .random-word-container h1 {
@@ -574,7 +574,7 @@ footer{
 
     .random-word-container {
         max-width: 90%;
-        margin-top: 50px;
+        margin-top: 13vh;
         padding: 1.5rem;
     }
 
@@ -589,7 +589,7 @@ footer{
     #slogan-font {
         font-size: 2rem;
     }
-
+    
 
 /* Footer */
     .footer-container ul {
@@ -603,8 +603,13 @@ footer{
     flex-direction: column; 
     height: auto; 
     width: 90%; 
+    margin-top: 20px;
 }
 
+
+.main-container {
+     margin-top: 30px;
+}
 .book-page {
     width: 100%;
     height: auto; 
@@ -638,7 +643,14 @@ footer{
     .random-word {
         font-size: 28px;
     }
+    
+    .open-book{
+        margin-top: 20px;
+    }
 
+    .main-container {
+         margin-top: 30px;
+    }
     .footer-container ul {
         gap: 80px;
     }
@@ -659,8 +671,17 @@ footer{
 /* Large devices (1025px - 1199px) */
 @media (min-width: 1025px) and (max-width: 1199px) {
     .random-word-container {
-        max-width: 100%;
+        max-width: 50%;
         padding: 1.5rem;
+        margin-top:100px;
+    }
+
+    .open-book{
+        margin-top: 20px;
+    }
+
+    .main-container {
+         margin-top: 30px;
     }
     .footer-container ul {
         gap: 60px;
@@ -676,14 +697,20 @@ footer{
     .random-word-container {
         max-width: 40%;
         padding: 1.5rem;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 30px;
     }
 
     .open-book {
         max-width: 1400px; 
         aspect-ratio: 4 / 3; 
         
+    }
+    .open-book{
+        margin-top: 20px;
+    }
+
+    .main-container {
+         margin-top: 30px;
     }
 
     .book-page {

@@ -53,7 +53,7 @@ function startTimer() {
       clearInterval(timer);
       Swal.fire({
         title: 'Time Up!',
-        text: 'The timer has run out. Learn the word and got to next word ot Try again! 👍',
+        text: 'The timer has run out. Learn the word and go to next word! 👍',
         icon: 'info',
         confirmButtonText: 'OK',
         customClass: {
@@ -96,7 +96,7 @@ function handleLetterClick(letter) {
       button.classList.add('disabled'); // Add the 'disabled' class for styling
     }
   });
-  
+
 let correctGuess = false;
   const spans = wordBlanks.querySelectorAll('span');
   spans.forEach(span => {
