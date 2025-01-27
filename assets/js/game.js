@@ -25,7 +25,6 @@ const words = [
 ];
 
 // Start the Game by resetting all the scores,index and lives.
-
 function startGame() {
   currentWordIndex = 0;
   score = 0;
@@ -38,7 +37,6 @@ function startGame() {
 /**
  * Starts a 60-second timer and updates the countdown, also resets if already exists.
  */
-
 function startTimer() {
   clearInterval(timer); 
   let timeLeft = 60;
@@ -70,7 +68,6 @@ function startTimer() {
  * Create the on-screen keyboard
  * @param {string[]} alphabet - The set of letters to create buttons for.
  */
-
 function createKeyboard() {
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   keyboard.innerHTML = ''; 
@@ -87,13 +84,12 @@ function createKeyboard() {
  * Reveals the correct letters in the word or decreases lives if incorrect.
  * @param {string} letter - The letter clicked by the user.
  */
-
 function handleLetterClick(letter) {
   const keyboardButtons = document.querySelectorAll('#keyboard button');
   keyboardButtons.forEach(button => {
     if (button.textContent === letter) {
-      button.disabled = true; // Disable the clicked button
-      button.classList.add('disabled'); // Add the 'disabled' class for styling
+      button.disabled = true; 
+      button.classList.add('disabled'); 
     }
   });
 
@@ -157,7 +153,6 @@ function displayWord() {
   createKeyboard();
   document.getElementById('definition-section').classList.add('hidden');
 }
-
 /**
  * Handles the scenario where a word is missing or out of range.
  */
@@ -174,7 +169,6 @@ function handleError() {
     window.location.href = "index.html";
   });
 }
-
 /**
  * Shows the definition of the word and displays the result of the round.
  * @param {boolean} isWin - Indicates whether the player guessed the word correctly.
@@ -186,7 +180,6 @@ function showDefinition(isWin) {
     '🤓 Oh, Not to Fret! You learned something new today 💪.';
 
   // Using Swal.fire to display the message in a popup
-
   Swal.fire({
     title: resultText,
     text: `The word was "${wordObj.word}": ${wordObj.definition}`,
@@ -214,7 +207,6 @@ nextWordBtn.addEventListener('click', moveToNextWord);
 /**
  * Ends the game and redirects to the endgame page
  */
-
 function endGame() {
   localStorage.setItem("finalScore", score);
   clearInterval(timer);
@@ -222,6 +214,5 @@ function endGame() {
     window.location.href = "endgame.html";
   }, 500);
 }
-
 // Start the game
 startGame();

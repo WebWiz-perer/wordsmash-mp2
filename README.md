@@ -398,7 +398,7 @@ The main content area is focused on providing a clear, interactive environment f
 
 ## End Result Page
 
-	Displays the final score achieved by the user.
+- Displays the final score achieved by the user.
 -	Provides a personalized message based on the score achieved.
 -	Allows users to restart the game or return to the homepage.
 
@@ -431,7 +431,7 @@ The main content area is focused on providing a clear, interactive environment f
 
 If the user has not guessed the word and runs out of time, a message is shown that they have run out of time.
 
-![Time runout](/workspace/wordsmash-mp2/documentation/websiteimages/timerunout.png)
+![Time runout](documentation/websiteimages/timerunout.png)
 
 -	Score is updated based on correct guessed words.
 
@@ -527,6 +527,7 @@ The game uses SweetAlert (Swal.fire) for visually appealing, interactive popups 
 **Error Handling:**
 
 Includes fallback mechanisms, such as logging errors if no word exists for the current index.
+
 ![Error Handling](documentation/websiteimages/Error.png)
 
 ## Future Enhancements:
@@ -600,11 +601,13 @@ The current version of Word Smash offers an enjoyable experience but as it was d
  ### Contents
  The inspiration was taken from wordgames and hangman games and the vocabulary words were taken from Dictionary and chat gpt was used to rephrase own words in more user friendly and professional manner.
 
- - [Hangman game](https://hangmanwordgame.com/)Provided inspiration and ideas for building the game.
+ -[Hangman game](https://hangmanwordgame.com/)Provided inspiration and ideas for building the game.
 
 - [Code Institute](https://codeinstitute.net): Provided structured learning resources and support for web development skills.
 
 - [Slack Community](https://slack.com/intl/en-gb): Engaged in the Slack community for Code Institute, receiving valuable support, feedback, and guidance throughout the development process.
+
+- [YouTube Playlist: Build A Quiz App With HTML, CSS, and JavaScript by James Q Quick](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx): A tutorial series used as a reference to learn and implement various features in the game.
 
 - [Chatgpt](https://chatgpt.com/) 
 

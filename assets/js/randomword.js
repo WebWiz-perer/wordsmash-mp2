@@ -19,7 +19,7 @@ function displayRandomWord() {
     const randomIndex = Math.floor(Math.random() * randomwords.length); 
     const randomWord = randomwords[randomIndex]; 
 
-    // Display word and definition
+// Display word and definition
     document.getElementById('random-word').innerText = randomWord.word; 
     document.getElementById('random-word-definition').innerText = randomWord.definition;
 }

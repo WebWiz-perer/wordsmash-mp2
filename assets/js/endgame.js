@@ -1,20 +1,14 @@
 /* jshint esversion: 6 */
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Endgame page loaded.");
-
     
     const finalScore = localStorage.getItem("finalScore") || 0;
     const finalScoreElement = document.getElementById("final-score-end");
     const personalisedMessageElement = document.getElementById("personalised-message");
 
-    console.log(`Retrieved final score: ${finalScore}`);
-
-    
     finalScoreElement.textContent = finalScore;
 
-
-    let message;
-    if (finalScore >= 8) { // Since you have 10 questions, a score of 8 and above is great!
+   let message;
+    if (finalScore >= 8) { 
         message = `🌟 Incredible! You're a Word Wizard! Keep it up! You scored ${finalScore}.`;
     } else if (finalScore >= 5) {
         message = `✨ Great work! You're on your way to mastering words! You scored ${finalScore}.`;
